@@ -46,9 +46,9 @@ const Header = () => {
         ) : (
           <>
             <div className="headerContent">
-              <a href="#about">&lt;About /&gt;</a>
-              <div>&lt;Skills /&gt;</div>
-              <div>&lt;Projects /&gt;</div>
+              <a href="#about">&lt;About/&gt;</a>
+              <a href="#skills">&lt;Skills/&gt;</a>
+              <a href="#projects">&lt;Projects/&gt;</a>
             </div>
           </>
         )}
@@ -57,13 +57,13 @@ const Header = () => {
       {isMobile && dropdownOpen && (
         <div className="mobileDropdown">
           <a href="#about" onClick={closeClikck}>
-            &lt;About /&gt;
+            &lt;About/&gt;
           </a>
-          <a href="#Skills" onClick={closeClikck}>
-            &lt;Skills /&gt;
+          <a href="#skills" onClick={closeClikck}>
+            &lt;Skills/&gt;
           </a>
-          <a href="#Projects" onClick={closeClikck}>
-            &lt;Projects /&gt;
+          <a href="#projects" onClick={closeClikck}>
+            &lt;Projects/&gt;
           </a>
         </div>
       )}
@@ -89,17 +89,10 @@ const StHeader = styled.div`
     width: 100%;
     z-index: 100;
 
-    .title {
-      @import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
-      font-family: "Rubik Iso", cursive;
-      font-weight: 600;
-      color: black;
-    }
-
     .headerContent {
       display: flex;
       justify-content: space-between;
-      width: 350px;
+      width: 400px;
     }
 
     &.scrolled {
@@ -121,13 +114,6 @@ const StHeader = styled.div`
     left: 0;
     width: 100%;
     z-index: 100;
-
-    .title {
-      @import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
-      font-family: "Rubik Iso", cursive;
-      font-weight: 600;
-      color: black;
-    }
 
     .headerContent {
       display: flex;
@@ -155,13 +141,6 @@ const StHeader = styled.div`
     width: 100%;
     z-index: 100;
 
-    .title {
-      @import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
-      font-family: "Rubik Iso", cursive;
-      font-weight: 600;
-      color: black;
-    }
-
     .headerContent {
       display: flex;
       justify-content: space-between;
@@ -187,13 +166,6 @@ const StHeader = styled.div`
     left: 0;
     width: 100%;
     z-index: 100;
-
-    .title {
-      @import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
-      font-family: "Rubik Iso", cursive;
-      font-weight: 600;
-      color: black;
-    }
 
     .dropdownIcon {
       cursor: pointer;

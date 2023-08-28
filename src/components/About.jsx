@@ -43,14 +43,14 @@ const About = () => {
           </div>
 
           <div className="sns">
-            <a href="https://github.com/jominuk" target="_blank">
-              <img src={require("../images/git.jpg")} />
+            <a href="https://github.com/jominuk">
+              <img src={require("../images/git.jpg")} alt="git" />
             </a>
-            <a href="https://minuk22.tistory.com/" target="_blank">
-              <img src={require("../images/ti.jpg")} />
+            <a href="https://minuk22.tistory.com/">
+              <img src={require("../images/ti.jpg")} alt="tistory" />
             </a>
-            <a href="https://velog.io/@jominuk1025" target="_blank">
-              <img src={require("../images/vel.jpg")} />
+            <a href="https://velog.io/@jominuk1025">
+              <img src={require("../images/vel.jpg")} alt="velog" />
             </a>
           </div>
         </div>
@@ -66,16 +66,18 @@ const StTitle = styled.div`
   font-family: "Phudu", cursive;
   font-size: 54px;
   font-weight: 800;
-  margin: 80px 0 50px 0;
+  margin-bottom: 50px;
+  color: rgb(68, 70, 73);
 `;
 
 const StContainer = styled.div`
   @media screen and (min-width: 1400px) {
     display: flex;
-    width: 65%;
+    width: 55%;
     height: 500px;
+    border-radius: 30px;
     margin: 0% auto;
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
 
     .imgGro {
       display: flex;
@@ -120,10 +122,11 @@ const StContainer = styled.div`
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
     display: flex;
-    width: 80%;
+    width: 70%;
     height: 500px;
     margin: 0% auto;
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
 
     .imgGro {
       display: flex;
@@ -174,7 +177,8 @@ const StContainer = styled.div`
       width: 80%;
       height: 300px;
       margin: 0 auto;
-      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
     }
     .proflie-img {
       width: 250px;
@@ -188,7 +192,8 @@ const StContainer = styled.div`
     .content {
       margin: 20px auto;
       width: 80%;
-      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
 
       .proflie-imfor {
         height: 370px;
