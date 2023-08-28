@@ -1,60 +1,65 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Scrolls from "../hooks/Scrolls";
 
 const About = () => {
+  const imageStyles = Scrolls();
+
   return (
     <>
-      <StTitle>about</StTitle>
-      <StContainer>
-        <div className="imgGro">
-          <div className="proflie-img" />
-        </div>
-        <div className="content">
-          <div className="proflie-imfor">
-            <p>
-              <FontAwesomeIcon
-                icon="fa-solid fa-address-book"
-                className="font"
-              />
-              조민욱
-            </p>
-            <p>
-              <FontAwesomeIcon
-                icon="fa-solid fa-cake-candles"
-                className="font"
-              />
-              92.10.25
-            </p>
-            <p>
-              <FontAwesomeIcon
-                icon="fa-solid fa-location-dot"
-                className="font"
-              />
-              경기도 성남시
-            </p>
-            <p>
-              <FontAwesomeIcon icon="fa-solid fa-envelope" className="font" />
-              jominuk1025 @ gmail.com
-            </p>
-            <p>
-              <FontAwesomeIcon icon="fa-solid fa-school" className="font" />
-              두원공과 대학교(기계과)
-            </p>
+      <div style={imageStyles}>
+        <StTitle>about</StTitle>
+        <StContainer>
+          <div className="imgGro">
+            <div className="proflie-img" />
           </div>
+          <div className="content">
+            <div className="proflie-imfor">
+              <p>
+                <FontAwesomeIcon
+                  icon="fa-solid fa-address-book"
+                  className="font"
+                />
+                조민욱
+              </p>
+              <p>
+                <FontAwesomeIcon
+                  icon="fa-solid fa-cake-candles"
+                  className="font"
+                />
+                92.10.25
+              </p>
+              <p>
+                <FontAwesomeIcon
+                  icon="fa-solid fa-location-dot"
+                  className="font"
+                />
+                경기도 성남시
+              </p>
+              <p>
+                <FontAwesomeIcon icon="fa-solid fa-envelope" className="font" />
+                jominuk1025 @ gmail.com
+              </p>
+              <p>
+                <FontAwesomeIcon icon="fa-solid fa-school" className="font" />
+                두원공과 대학교(기계과)
+              </p>
+            </div>
 
-          <div className="sns">
-            <a href="https://github.com/jominuk">
-              <img src={require("../images/git.jpg")} alt="git" />
-            </a>
-            <a href="https://minuk22.tistory.com/">
-              <img src={require("../images/ti.jpg")} alt="tistory" />
-            </a>
-            <a href="https://velog.io/@jominuk1025">
-              <img src={require("../images/vel.jpg")} alt="velog" />
-            </a>
+            <div className="sns">
+              <a href="https://github.com/jominuk">
+                <img src={require("../images/git.jpg")} alt="git" />
+              </a>
+              <a href="https://minuk22.tistory.com/">
+                <img src={require("../images/ti.jpg")} alt="tistory" />
+              </a>
+              <a href="https://velog.io/@jominuk1025">
+                <img src={require("../images/vel.jpg")} alt="velog" />
+              </a>
+            </div>
           </div>
-        </div>
-      </StContainer>
+        </StContainer>
+      </div>
     </>
   );
 };
