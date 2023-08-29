@@ -34,8 +34,8 @@ const Header = () => {
 
   return (
     <StHeader className={`${scrolled ? "scrolled" : ""}`}>
-      <a href="/" className="title">
-        jominuk Portfolio
+      <a href="/">
+        <img src={require("../images/minuk.png")} className="title" />
       </a>
 
       <div className={`${isMobile ? "mobile" : ""}`}>
@@ -78,16 +78,19 @@ const StHeader = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
-    width: 90%;
+    width: 100%;
     height: 70px;
     font-size: 20px;
 
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 100;
+
+    .title {
+      width: 80px;
+      height: 50px;
+    }
 
     .headerContent {
       display: flex;
@@ -105,7 +108,6 @@ const StHeader = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     height: 70px;
     font-size: 20px;
 
@@ -114,6 +116,11 @@ const StHeader = styled.div`
     left: 0;
     width: 100%;
     z-index: 100;
+
+    .title {
+      width: 80px;
+      height: 50px;
+    }
 
     .headerContent {
       display: flex;
@@ -131,7 +138,6 @@ const StHeader = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     height: 70px;
     font-size: 20px;
 
@@ -140,6 +146,11 @@ const StHeader = styled.div`
     left: 0;
     width: 100%;
     z-index: 100;
+
+    .title {
+      width: 80px;
+      height: 50px;
+    }
 
     .headerContent {
       display: flex;
@@ -157,7 +168,6 @@ const StHeader = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     height: 70px;
     font-size: 20px;
 
@@ -166,6 +176,11 @@ const StHeader = styled.div`
     left: 0;
     width: 100%;
     z-index: 100;
+
+    .title {
+      width: 80px;
+      height: 50px;
+    }
 
     .dropdownIcon {
       cursor: pointer;

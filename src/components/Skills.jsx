@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import Scrolls from "../hooks/Scrolls";
 
 const Skills = () => {
+  const scrollPosition = 1100;
+  const imageStyles = Scrolls(scrollPosition);
+
   return (
     <>
-      <StTitle>skills</StTitle>
-      <StSkills>
+      <StTitle style={imageStyles}>skills</StTitle>
+      <StSkills style={imageStyles}>
         <div className="skillGroup">
           <div>HTML5</div>
           <div>CSS3</div>
@@ -18,42 +22,12 @@ const Skills = () => {
         </div>
 
         <div className="my-skill">
-          <div>
-            80%
-            <div className="graph" style={{ width: "80%" }}></div>
-          </div>
-          <div>
-            80%
-            <div className="graph" style={{ width: "80%" }}></div>
-          </div>
-          <div>
-            60%
-            <div className="graph" style={{ width: "60%" }}></div>
-          </div>
-          <div>
-            30%
-            <div className="graph" style={{ width: "30%" }}></div>
-          </div>
-          <div>
-            70%
-            <div className="graph" style={{ width: "70%" }}></div>
-          </div>
-          <div>
-            60%
-            <div className="graph" style={{ width: "60%" }}></div>
-          </div>
-          <div>
-            65%
-            <div className="graph" style={{ width: "65%" }}></div>
-          </div>
-          <div>
-            50%
-            <div className="graph" style={{ width: "50%" }}></div>
-          </div>
-          <div>
-            20%
-            <div className="graph" style={{ width: "20%" }}></div>
-          </div>
+          {[80, 80, 60, 30, 70, 60, 65, 50, 20].map((percentage, index) => (
+            <div key={index}>
+              {percentage}%
+              <div className="graph" style={{ width: `${percentage}%` }}></div>
+            </div>
+          ))}
         </div>
       </StSkills>
     </>

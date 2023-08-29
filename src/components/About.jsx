@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Scrolls from "../hooks/Scrolls";
 
 const About = () => {
-  const imageStyles = Scrolls();
+  const scrollPosition = 200;
+  const imageStyles = Scrolls(scrollPosition);
 
   return (
     <>
@@ -82,7 +83,7 @@ const StContainer = styled.div`
     height: 500px;
     border-radius: 30px;
     margin: 0% auto;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
 
     .imgGro {
       display: flex;
