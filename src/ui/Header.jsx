@@ -40,69 +40,71 @@ const Header = () => {
   }, []);
 
   return (
-    <StHeader className={`${scrolled ? "scrolled" : ""}`}>
-      <nav>
-        <a href="/">
-          <img
-            src={require("../images/minuk.png")}
-            alt="logo"
-            className="title"
-          />
-        </a>
+    <>
+      <StHeader className={`${scrolled ? "scrolled" : ""}`}>
+        <nav>
+          <a href="/">
+            <img
+              src={require("../images/minuk.png")}
+              alt="logo"
+              className="title"
+            />
+          </a>
 
-        <div className={`${isMobile ? "mobile" : ""}`}>
-          {isMobile ? (
-            <div className="dropdownIcon" onClick={toggleDropdown}>
-              ☰
-            </div>
-          ) : (
-            <>
-              <div className="headerContent">
-                <StTitleButton
-                  className={"About" ? "active" : ""}
-                  onClick={() => scrollToSection("about")}
-                >
-                  &lt;About/&gt;
-                </StTitleButton>
-
-                <StTitleButton
-                  className={"Skills" ? "active" : ""}
-                  onClick={() => scrollToSection("skills")}
-                >
-                  &lt;Skills/&gt;
-                </StTitleButton>
-
-                <StTitleButton
-                  className={"Projects" ? "active" : ""}
-                  onClick={() => scrollToSection("projects")}
-                >
-                  &lt;Projects/&gt;
-                </StTitleButton>
+          <div className={`${isMobile ? "mobile" : ""}`}>
+            {isMobile ? (
+              <div className="dropdownIcon" onClick={toggleDropdown}>
+                ☰
               </div>
-            </>
-          )}
-        </div>
+            ) : (
+              <>
+                <div className="headerContent">
+                  <StTitleButton
+                    className={"About" ? "active" : ""}
+                    onClick={() => scrollToSection("about")}
+                  >
+                    &lt;About/&gt;
+                  </StTitleButton>
 
-        {isMobile && dropdownOpen && (
-          <div className="mobileDropdown">
-            <button onClick={() => scrollToSection("about")}>
-              &lt;About/&gt;
-            </button>
-            <button onClick={() => scrollToSection("skills")}>
-              &lt;Skills/&gt;
-            </button>
-            <button onClick={() => scrollToSection("projects")}>
-              &lt;Projects/&gt;
-            </button>
+                  <StTitleButton
+                    className={"Skills" ? "active" : ""}
+                    onClick={() => scrollToSection("skills")}
+                  >
+                    &lt;Skills/&gt;
+                  </StTitleButton>
+
+                  <StTitleButton
+                    className={"Projects" ? "active" : ""}
+                    onClick={() => scrollToSection("projects")}
+                  >
+                    &lt;Projects/&gt;
+                  </StTitleButton>
+                </div>
+              </>
+            )}
           </div>
-        )}
-      </nav>
+
+          {isMobile && dropdownOpen && (
+            <div className="mobileDropdown">
+              <button onClick={() => scrollToSection("about")}>
+                &lt;About/&gt;
+              </button>
+              <button onClick={() => scrollToSection("skills")}>
+                &lt;Skills/&gt;
+              </button>
+              <button onClick={() => scrollToSection("projects")}>
+                &lt;Projects/&gt;
+              </button>
+            </div>
+          )}
+        </nav>
+      </StHeader>
 
       <StImgbox>
         <h2> 프론트엔드 개발자</h2>
         <h2> dev.</h2>
       </StImgbox>
-    </StHeader>
+    </>
   );
 };
 
@@ -299,9 +301,9 @@ const StTitleButton = styled.button`
 `;
 
 const StImgbox = styled.div`
-  /* background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbNhZTb%2FbtsswVLnnSt%2F0aD4StTm4tjtGlvk8NYrSK%2Fimg.jpg")
-    no-repeat center center;
+  background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbNhZTb%2FbtsswVLnnSt%2F0aD4StTm4tjtGlvk8NYrSK%2Fimg.jpg")
+    no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
-  height: 600px; */
+  height: 700px;
 `;
