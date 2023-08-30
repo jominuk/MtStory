@@ -29,16 +29,14 @@ const Portfolio = () => {
           있습니다.
         </p>
 
-        <StBackground id="about">
-          <About />
-        </StBackground>
+        <StLine id="about" />
+        <About />
 
-        <div id="skills" />
+        <StLine id="skills" />
         <Skills />
 
-        <StBackground id="projects">
-          <Projects />
-        </StBackground>
+        <StLine id="projects" />
+        <Projects />
 
         <div style={{ height: "100px" }} />
       </StPortfolio>
@@ -71,8 +69,7 @@ const StPortfolio = styled.div`
   }
 `;
 
-const StBackground = styled.div`
-  background: rgb(245 245 245);
-  margin-top: 200px;
-  padding: 120px 0;
+const StLine = styled.div`
+  margin: 150px 0;
+  border-bottom: 2px dashed #1959c16e;
 `;
