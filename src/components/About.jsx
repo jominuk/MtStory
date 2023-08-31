@@ -68,12 +68,10 @@ const About = () => {
 export default About;
 
 const StTitle = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Phudu:wght@600;800&display=swap");
-  font-family: "Phudu", cursive;
   font-size: 54px;
   font-weight: 800;
   margin-bottom: 50px;
-  color: rgb(68, 70, 73);
+  color: rgba(0, 0, 0, 0.6);
 `;
 
 const StContainer = styled.div`

@@ -18,10 +18,9 @@ const Portfolio = () => {
           <p className="content">
             안녕하세요 실패의 아픔을 배움의 기쁨으로 개발자의 어깨를 나란히 걷고
             있는 조민욱 입니다.
-            <br />그 동안의 교육에서 총 3개의 협업 프로젝트를 참여했습니다.
+            <br />그 동안의 교육에서 협업 프로젝트 참여를 통해
             <br />
-            협업을 통해 적극적인 의사소통과 문제를 찾고 해결에 많은 성장을
-            하였으며,
+            적극적인 의사소통과 문제를 찾고 해결에 많은 성장을 하였으며,
             <br />
             다양한 개발 역량과 스킬을 꾸준히 쌓아왔습니다.
             <br />
@@ -58,10 +57,9 @@ const StPortfolio = styled.div`
 
   .name {
     margin: 80px 0 80px 0;
-    font-size: 60px;
-    font-weight: 1000;
-    color: rgba(0, 0, 0, 0.7);
-    line-height: 80px;
+    font-size: 54px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.6);
   }
   .content {
     line-height: 32px;

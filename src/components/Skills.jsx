@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Scrolls from "../hooks/Scrolls";
 
 const Skills = () => {
-  const scrollPosition = 1300;
+  const scrollPosition = 1800;
   const imageStyles = Scrolls(scrollPosition);
 
   return (
@@ -37,12 +37,10 @@ const Skills = () => {
 export default Skills;
 
 const StTitle = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Phudu:wght@600;800&display=swap");
-  font-family: "Phudu", cursive;
   font-size: 54px;
   font-weight: 800;
   margin: 100px 0 50px 0;
-  color: rgb(68, 70, 73);
+  color: rgba(0, 0, 0, 0.6);
 `;
 
 const StSkills = styled.div`
