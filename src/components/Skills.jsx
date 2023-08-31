@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Scrolls from "../hooks/Scrolls";
 
 const Skills = () => {
-  const scrollPosition = 1100;
+  const scrollPosition = 1300;
   const imageStyles = Scrolls(scrollPosition);
 
   return (
