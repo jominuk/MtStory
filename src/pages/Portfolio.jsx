@@ -74,5 +74,5 @@ const StPortfolio = styled.div`
 
 const StLine = styled.div`
   margin: 150px 0;
-  border-bottom: 2px dashed #1959c16e;
+  border-bottom: 3px dashed #1959c16e;
 `;

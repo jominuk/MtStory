@@ -77,7 +77,7 @@ const StTitle = styled.div`
 const StContainer = styled.div`
   @media screen and (min-width: 1400px) {
     display: flex;
-    width: 55%;
+    width: 900px;
     height: 500px;
     border-radius: 30px;
     margin: 0% auto;
@@ -130,7 +130,7 @@ const StContainer = styled.div`
     height: 500px;
     margin: 0% auto;
     border-radius: 30px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
 
     .imgGro {
       display: flex;
@@ -182,7 +182,7 @@ const StContainer = styled.div`
       height: 300px;
       margin: 0 auto;
       border-radius: 20px;
-      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
     }
     .proflie-img {
       width: 250px;
@@ -197,7 +197,7 @@ const StContainer = styled.div`
       margin: 20px auto;
       width: 80%;
       border-radius: 20px;
-      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
 
       .proflie-imfor {
         height: 370px;
@@ -231,7 +231,7 @@ const StContainer = styled.div`
       width: 100%;
       height: 300px;
       margin: 0 auto;
-      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
     }
     .proflie-img {
       width: 250px;
@@ -245,7 +245,7 @@ const StContainer = styled.div`
     .content {
       margin: 20px auto;
       width: 100%;
-      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
 
       .proflie-imfor {
         height: 370px;

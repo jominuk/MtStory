@@ -112,51 +112,203 @@ const Header = () => {
 export default Header;
 
 const StImgbox = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Vertical centering */
-  align-items: center; /* Horizontal centering */
-  background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkXyq1%2FbtssCvslSVc%2Fs1yHBkkWHuskOJduK90l8K%2Fimg.jpg")
-    no-repeat top center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 80vh;
+  @media screen and (min-width: 1400px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkXyq1%2FbtssCvslSVc%2Fs1yHBkkWHuskOJduK90l8K%2Fimg.jpg")
+      no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
 
-  .txt1 {
-    text-align: center;
-    font-size: 100px;
-    font-weight: 600;
-    margin-top: 250px;
-  }
-
-  .txt2 {
-    text-align: center;
-    font-size: 40px;
-    line-height: 180px;
-    font-weight: 600;
-  }
-
-  .down {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    bottom: 200px;
-    margin-top: 100px;
-    animation: scrolldown 1300ms linear infinite;
-  }
-
-  @keyframes scrolldown {
-    0% {
-      bottom: 230px;
-      opacity: 1;
+    .txt1 {
+      text-align: center;
+      font-size: 100px;
+      font-weight: 600;
+      margin-top: 250px;
     }
-    50% {
-      bottom: 210px;
-      opacity: 0.5;
+
+    .txt2 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 180px;
+      font-weight: 600;
     }
-    100% {
-      bottom: 190px;
-      opacity: 0;
+
+    .down {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 200px;
+      margin-top: 100px;
+      animation: scrolldown 1300ms linear infinite;
+    }
+
+    @keyframes scrolldown {
+      0% {
+        bottom: 220px;
+        opacity: 1;
+      }
+      50% {
+        bottom: 200px;
+        opacity: 0.5;
+      }
+      100% {
+        bottom: 180px;
+        opacity: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1000px) and (max-width: 1399px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkXyq1%2FbtssCvslSVc%2Fs1yHBkkWHuskOJduK90l8K%2Fimg.jpg")
+      no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+
+    .txt1 {
+      text-align: center;
+      font-size: 100px;
+      font-weight: 600;
+      margin-top: 250px;
+    }
+
+    .txt2 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 180px;
+      font-weight: 600;
+    }
+
+    .down {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 200px;
+      margin-top: 100px;
+      animation: scrolldown 1300ms linear infinite;
+    }
+
+    @keyframes scrolldown {
+      0% {
+        bottom: 200px;
+        opacity: 1;
+      }
+      50% {
+        bottom: 180px;
+        opacity: 0.5;
+      }
+      100% {
+        bottom: 160px;
+        opacity: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 999px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkXyq1%2FbtssCvslSVc%2Fs1yHBkkWHuskOJduK90l8K%2Fimg.jpg")
+      no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+    .txt1 {
+      text-align: center;
+      font-size: 100px;
+      font-weight: 600;
+      margin-top: 250px;
+    }
+
+    .txt2 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 180px;
+      font-weight: 600;
+    }
+
+    .down {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 200px;
+      margin-top: 100px;
+      animation: scrolldown 1300ms linear infinite;
+    }
+
+    @keyframes scrolldown {
+      0% {
+        bottom: 40px;
+        opacity: 1;
+      }
+      50% {
+        bottom: 20px;
+        opacity: 0.5;
+      }
+      100% {
+        bottom: 0px;
+        opacity: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkXyq1%2FbtssCvslSVc%2Fs1yHBkkWHuskOJduK90l8K%2Fimg.jpg")
+      no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+    .txt1 {
+      text-align: center;
+      font-size: 100px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .txt2 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 180px;
+      font-weight: 600;
+    }
+
+    .down {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 200px;
+      margin-top: 100px;
+      animation: scrolldown 1300ms linear infinite;
+    }
+
+    @keyframes scrolldown {
+      0% {
+        bottom: 40px;
+        opacity: 1;
+      }
+      50% {
+        bottom: 20px;
+        opacity: 0.5;
+      }
+      100% {
+        bottom: 0px;
+        opacity: 0;
+      }
     }
   }
 `;

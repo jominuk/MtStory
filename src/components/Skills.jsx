@@ -45,7 +45,7 @@ const StTitle = styled.div`
 
 const StSkills = styled.div`
   display: flex;
-  width: 50%;
+  width: 900px;
   height: 500px;
   margin: 0 auto;
 
@@ -77,7 +77,7 @@ const StSkills = styled.div`
       text-align: right;
       position: relative;
       overflow: hidden;
-      border-radius: 10px 0 0 10px;
+      border-radius: 10px;
       padding-right: 10px;
     }
 
