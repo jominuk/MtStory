@@ -5,7 +5,7 @@ import Projects from "../components/Projects";
 import Scrolls from "../hooks/Scrolls";
 
 const Portfolio = () => {
-  const scrollPosition = 300;
+  const scrollPosition = 200;
   const imageStyles = Scrolls(scrollPosition);
 
   return (
@@ -51,7 +51,7 @@ const Portfolio = () => {
 export default Portfolio;
 
 const StPortfolio = styled.div`
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
   text-align: center;
 

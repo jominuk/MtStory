@@ -15,7 +15,7 @@ const Slack = () => {
   return (
     <StSlackBox>
       <CardContainer onClick={handleCardFlip}>
-        <CardInner flipped={isFlipped}>
+        <CardInner flipped={isFlipped ? "true" : "false"}>
           <CardFront>
             <p>Front of the Card</p>
           </CardFront>
@@ -49,7 +49,8 @@ const CardInner = styled.div`
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  transform: ${(props) => (props.flipped ? "rotateY(180deg)" : "none")};
+  transform: ${(props) =>
+    props.flipped === "true" ? "rotateY(180deg)" : "none"};
 `;
 
 const CardSide = styled.div`

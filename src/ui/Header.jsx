@@ -321,7 +321,6 @@ const StHeader = styled.div`
     width: 100%;
     height: 70px;
     z-index: 100;
-    background: rgba(255, 255, 255, 0);
 
     nav {
       display: flex;
