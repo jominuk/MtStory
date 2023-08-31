@@ -8,8 +8,7 @@ const Portfolio = () => {
     <>
       <StPortfolio>
         <div className="name">
-          <div>Frontend 개발자</div>
-          <div>조민욱</div>
+          <div>Intro</div>
         </div>
         <p className="content">
           안녕하세요 실패의 아픔을 배움의 기쁨으로 개발자의 어깨를 나란히 걷고
@@ -52,8 +51,8 @@ const StPortfolio = styled.div`
   text-align: center;
 
   .name {
-    margin: 180px 0 60px 0;
-    font-size: 48px;
+    margin: 80px 0 80px 0;
+    font-size: 60px;
     font-weight: 1000;
     color: rgba(0, 0, 0, 0.7);
     line-height: 80px;

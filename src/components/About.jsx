@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Scrolls from "../hooks/Scrolls";
 
 const About = () => {
-  const scrollPosition = 200;
+  const scrollPosition = 700;
   const imageStyles = Scrolls(scrollPosition);
 
   return (

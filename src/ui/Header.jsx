@@ -41,6 +41,12 @@ const Header = () => {
 
   return (
     <>
+      <StImgbox>
+        <div className="txt1"> FRONT-END DEV.</div>
+        <div className="txt2"> fortfolio </div>
+        <img src={require("../images/down.png")} className="down" />
+      </StImgbox>
+
       <StHeader className={`${scrolled ? "scrolled" : ""}`}>
         <nav>
           <a href="/">
@@ -51,7 +57,7 @@ const Header = () => {
             />
           </a>
 
-          <div className={`${isMobile ? "mobile" : ""}`}>
+          <div className={isMobile ? "mobile" : ""}>
             {isMobile ? (
               <div className="dropdownIcon" onClick={toggleDropdown}>
                 ☰
@@ -99,16 +105,61 @@ const Header = () => {
           )}
         </nav>
       </StHeader>
-
-      <StImgbox>
-        <h2> 프론트엔드 개발자</h2>
-        <h2> dev.</h2>
-      </StImgbox>
     </>
   );
 };
 
 export default Header;
+
+const StImgbox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical centering */
+  align-items: center; /* Horizontal centering */
+  background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkXyq1%2FbtssCvslSVc%2Fs1yHBkkWHuskOJduK90l8K%2Fimg.jpg")
+    no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+
+  .txt1 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 600;
+    margin-top: 250px;
+  }
+
+  .txt2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 180px;
+    font-weight: 600;
+  }
+
+  .down {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 200px;
+    margin-top: 100px;
+    animation: scrolldown 1300ms linear infinite;
+  }
+
+  @keyframes scrolldown {
+    0% {
+      bottom: 230px;
+      opacity: 1;
+    }
+    50% {
+      bottom: 210px;
+      opacity: 0.5;
+    }
+    100% {
+      bottom: 190px;
+      opacity: 0;
+    }
+  }
+`;
 
 const StHeader = styled.div`
   @media screen and (min-width: 1400px) {
@@ -118,6 +169,7 @@ const StHeader = styled.div`
     width: 100%;
     height: 70px;
     z-index: 100;
+    background: rgba(255, 255, 255, 0);
 
     nav {
       display: flex;
@@ -142,7 +194,7 @@ const StHeader = styled.div`
 
     &.scrolled {
       background: white;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
     }
   }
 
@@ -277,10 +329,12 @@ const StTitleButton = styled.button`
   font-size: 22px;
   background: none;
   border: none;
-  color: black;
+  font-weight: 600;
   cursor: pointer;
+  color: black;
   &:hover {
-    color: rgb(0 161 167);
+    color: #3437e0c7;
+    scale: 1.1;
   }
   &:after {
     content: "";
@@ -289,7 +343,7 @@ const StTitleButton = styled.button`
     left: 0;
     width: 100%;
     height: 2px;
-    background: rgb(0 161 167);
+    background: #3437e0c7;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
   }
@@ -298,12 +352,4 @@ const StTitleButton = styled.button`
     transform: scaleX(1);
     transform: scale(1);
   }
-`;
-
-const StImgbox = styled.div`
-  background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbNhZTb%2FbtsswVLnnSt%2F0aD4StTm4tjtGlvk8NYrSK%2Fimg.jpg")
-    no-repeat top center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 700px;
 `;
