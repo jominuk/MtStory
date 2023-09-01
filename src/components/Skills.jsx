@@ -7,29 +7,34 @@ const Skills = () => {
 
   return (
     <>
-      <StTitle style={imageStyles}>skills</StTitle>
-      <StSkills style={imageStyles}>
-        <div className="skillGroup">
-          <div>HTML5</div>
-          <div>CSS3</div>
-          <div>JavaScript</div>
-          <div>TypeScript</div>
-          <div>React</div>
-          <div>Redux-Toolkit</div>
-          <div>React-Query</div>
-          <div>SWR</div>
-          <div>Socket.io</div>
-        </div>
+      <div style={imageStyles}>
+        <StTitle>skills</StTitle>
+        <StSkills>
+          <div className="skillGroup">
+            <div>HTML5</div>
+            <div>CSS3</div>
+            <div>JavaScript</div>
+            <div>TypeScript</div>
+            <div>React</div>
+            <div>Redux-Toolkit</div>
+            <div>React-Query</div>
+            <div>SWR</div>
+            <div>Socket.io</div>
+          </div>
 
-        <div className="my-skill">
-          {[80, 80, 60, 30, 70, 60, 65, 50, 20].map((percentage, index) => (
-            <div key={index}>
-              {percentage}%
-              <div className="graph" style={{ width: `${percentage}%` }}></div>
-            </div>
-          ))}
-        </div>
-      </StSkills>
+          <div className="my-skill">
+            {[80, 80, 60, 30, 70, 60, 65, 50, 20].map((percentage, index) => (
+              <div key={index}>
+                {percentage}%
+                <div
+                  className="graph"
+                  style={{ width: `${percentage}%` }}
+                ></div>
+              </div>
+            ))}
+          </div>
+        </StSkills>
+      </div>
     </>
   );
 };
