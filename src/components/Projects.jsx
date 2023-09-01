@@ -54,37 +54,26 @@ const StTitle = styled.div`
 
 const StProject = styled.div`
   @media screen and (min-width: 1400px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 900px;
+    width: 60%;
     margin: 0 auto;
 
     .ProjectBox {
       display: flex;
-      margin: 0 auto;
     }
   }
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 900px;
+    width: 60%;
     margin: 0 auto;
 
     .ProjectBox {
       display: flex;
-      margin: 0 auto;
     }
   }
 
   @media screen and (min-width: 600px) and (max-width: 999px) {
     display: flex;
     flex-direction: column;
-
-    width: 900px;
-    margin: 0 auto;
 
     .ProjectBox {
       margin: 0 auto;
@@ -94,9 +83,6 @@ const StProject = styled.div`
   @media screen and (max-width: 599px) {
     display: flex;
     flex-direction: column;
-
-    width: 900px;
-    margin: 0 auto;
 
     .ProjectBox {
       margin: 0 auto;

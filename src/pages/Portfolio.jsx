@@ -51,7 +51,7 @@ const Portfolio = () => {
 export default Portfolio;
 
 const StPortfolio = styled.div`
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 

@@ -44,57 +44,99 @@ const StTitle = styled.div`
 `;
 
 const StSkills = styled.div`
-  display: flex;
-  width: 900px;
-  height: 500px;
-  margin: 0 auto;
-
-  .skillGroup {
+  @media screen and (min-width: 600px) {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
 
-    div {
-      width: 150px;
-      line-height: 35px;
-      color: rgb(68, 70, 73);
-      font-weight: 800;
-      font-size: 15px;
+    .skillGroup {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      div {
+        width: 150px;
+        line-height: 35px;
+        color: rgb(68, 70, 73);
+        font-weight: 800;
+        font-size: 15px;
+      }
+    }
+
+    .my-skill {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+
+      div {
+        background: rgb(238 238 238);
+        width: 95%;
+        height: 35px;
+        line-height: 35px;
+        text-align: right;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        padding-right: 10px;
+      }
+
+      .graph {
+        background: rgb(0 161 167);
+        height: 35px;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        animation: slideIn 5s forwards 2s;
+        border-radius: 0 10px 10px 0;
+      }
+    }
+
+    @keyframes slideIn {
+      to {
+        left: 0;
+      }
     }
   }
 
-  .my-skill {
+  @media screen and (max-width: 599px) {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
 
-    div {
-      background: rgb(238 238 238);
-      width: 95%;
-      height: 35px;
-      line-height: 35px;
-      text-align: right;
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-      padding-right: 10px;
+    .skillGroup {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      div {
+        width: 100px;
+        line-height: 35px;
+        color: rgb(68, 70, 73);
+        font-weight: 800;
+        font-size: 15px;
+      }
     }
 
-    .graph {
-      background: rgb(0 161 167);
-      height: 35px;
-      position: absolute;
-      top: 0;
-      left: -100%;
-      animation: slideIn 5s forwards 2s;
-      border-radius: 0 10px 10px 0;
-    }
-  }
+    .my-skill {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
 
-  @keyframes slideIn {
-    to {
-      left: 0;
+      div {
+        background: rgb(238 238 238);
+        width: 95%;
+        height: 35px;
+        line-height: 35px;
+        text-align: right;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        padding-right: 10px;
+      }
     }
   }
 `;

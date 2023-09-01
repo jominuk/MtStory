@@ -77,7 +77,7 @@ const StTitle = styled.div`
 const StContainer = styled.div`
   @media screen and (min-width: 1400px) {
     display: flex;
-    width: 900px;
+    width: 80%;
     height: 500px;
     border-radius: 30px;
     margin: 0% auto;
@@ -126,7 +126,7 @@ const StContainer = styled.div`
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
     display: flex;
-    width: 70%;
+    width: 80%;
     height: 500px;
     margin: 0% auto;
     border-radius: 30px;
@@ -228,7 +228,7 @@ const StContainer = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 90%;
       height: 300px;
       margin: 0 auto;
       box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
@@ -244,7 +244,7 @@ const StContainer = styled.div`
 
     .content {
       margin: 20px auto;
-      width: 100%;
+      width: 90%;
       box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
 
       .proflie-imfor {

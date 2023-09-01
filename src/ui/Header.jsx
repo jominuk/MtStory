@@ -124,17 +124,51 @@ const StImgbox = styled.div`
     height: 80vh;
 
     .txt1 {
+      position: relative;
       text-align: center;
       font-size: 100px;
       font-weight: 600;
       margin-top: 250px;
+      animation: movehight 0.4s ease-in 1;
+
+      @keyframes movehight {
+        0% {
+          top: -150px;
+          opacity: 0;
+        }
+        30% {
+          top: -100px;
+          opacity: 0.3;
+        }
+        60% {
+          top: -50px;
+          opacity: 0.6;
+        }
+        100% {
+          top: 0;
+          opacity: 1;
+        }
+      }
     }
 
     .txt2 {
+      position: relative;
       text-align: center;
       font-size: 40px;
       line-height: 180px;
       font-weight: 600;
+      animation: moveh 2s ease-in-out 1;
+    }
+
+    @keyframes moveh {
+      from {
+        letter-spacing: 3vw;
+        opacity: 0;
+      }
+      to {
+        letter-spacing: normal;
+        opacity: 1;
+      }
     }
 
     .down {
@@ -174,17 +208,51 @@ const StImgbox = styled.div`
     height: 80vh;
 
     .txt1 {
+      position: relative;
       text-align: center;
-      font-size: 100px;
+      font-size: 80px;
       font-weight: 600;
       margin-top: 250px;
+      animation: movehight 0.4s ease-in 1;
+
+      @keyframes movehight {
+        0% {
+          top: -150px;
+          opacity: 0;
+        }
+        30% {
+          top: -100px;
+          opacity: 0.3;
+        }
+        60% {
+          top: -50px;
+          opacity: 0.6;
+        }
+        100% {
+          top: 0;
+          opacity: 1;
+        }
+      }
     }
 
     .txt2 {
+      position: relative;
       text-align: center;
-      font-size: 40px;
+      font-size: 35px;
       line-height: 180px;
       font-weight: 600;
+      animation: moveh 2s ease-in-out 1;
+
+      @keyframes moveh {
+        from {
+          letter-spacing: 3vw;
+          opacity: 0;
+        }
+        to {
+          letter-spacing: normal;
+          opacity: 1;
+        }
+      }
     }
 
     .down {
@@ -224,17 +292,51 @@ const StImgbox = styled.div`
     height: 100vh;
 
     .txt1 {
+      position: relative;
       text-align: center;
-      font-size: 100px;
+      font-size: 60px;
       font-weight: 600;
-      margin-top: 250px;
+      margin-top: 150px;
+      animation: movehight 0.4s ease-in 1;
+
+      @keyframes movehight {
+        0% {
+          top: -150px;
+          opacity: 0;
+        }
+        30% {
+          top: -100px;
+          opacity: 0.3;
+        }
+        60% {
+          top: -50px;
+          opacity: 0.6;
+        }
+        100% {
+          top: 0;
+          opacity: 1;
+        }
+      }
     }
 
     .txt2 {
+      position: relative;
       text-align: center;
-      font-size: 40px;
+      font-size: 30px;
       line-height: 180px;
       font-weight: 600;
+      animation: moveh 2s ease-in-out 1;
+
+      @keyframes moveh {
+        from {
+          letter-spacing: 3vw;
+          opacity: 0;
+        }
+        to {
+          letter-spacing: normal;
+          opacity: 1;
+        }
+      }
     }
 
     .down {
@@ -274,17 +376,51 @@ const StImgbox = styled.div`
     height: 100vh;
 
     .txt1 {
+      position: relative;
       text-align: center;
-      font-size: 100px;
+      font-size: 40px;
       font-weight: 600;
       margin-top: 10px;
+      animation: movehight 0.4s ease-in 1;
+
+      @keyframes movehight {
+        0% {
+          top: -150px;
+          opacity: 0;
+        }
+        30% {
+          top: -100px;
+          opacity: 0.3;
+        }
+        60% {
+          top: -50px;
+          opacity: 0.6;
+        }
+        100% {
+          top: 0;
+          opacity: 1;
+        }
+      }
     }
 
     .txt2 {
+      position: relative;
       text-align: center;
-      font-size: 40px;
+      font-size: 20px;
       line-height: 180px;
       font-weight: 600;
+      animation: moveh 2s ease-in-out 1;
+
+      @keyframes moveh {
+        from {
+          letter-spacing: 3vw;
+          opacity: 0;
+        }
+        to {
+          letter-spacing: normal;
+          opacity: 1;
+        }
+      }
     }
 
     .down {
@@ -326,7 +462,7 @@ const StHeader = styled.div`
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 1600px;
+      width: 90%;
       margin: 0 auto;
       height: 100%;
       font-size: 20px;
