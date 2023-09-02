@@ -18,6 +18,9 @@ const Ezip = () => {
               alt="eziplogo"
               className="ezipMain"
             />
+            <div className="beforeBox">
+              <div className="before"> Unlock the Secret </div>
+            </div>
           </CardFront>
           <CardBack>
             <div className="projectContainer">
@@ -156,9 +159,39 @@ const CardSide = styled.div`
 `;
 
 const CardFront = styled(CardSide)`
+  cursor: pointer;
+
   .ezipMain {
     width: 100%;
     height: 80%;
+  }
+  .beforeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s;
+
+    .before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 270px;
+      height: 150px;
+      border: 2px solid white;
+      border-radius: 30px;
+    }
+  }
+  &:hover .beforeBox {
+    opacity: 1; /* When hovering over CardFront, set opacity to 1 */
   }
   @media screen and (min-width: 1400px) {
   }

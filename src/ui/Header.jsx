@@ -130,6 +130,7 @@ const StImgbox = styled.div`
       font-weight: 600;
       margin-top: 250px;
       animation: movehight 0.4s ease-in 1;
+      color: rgb(79, 82, 77, 0.9);
 
       @keyframes movehight {
         0% {
@@ -158,6 +159,7 @@ const StImgbox = styled.div`
       line-height: 180px;
       font-weight: 600;
       animation: moveh 3s ease-in-out 1;
+      color: rgba(0, 0, 0, 0.7);
     }
 
     @keyframes moveh {
@@ -620,7 +622,9 @@ const StTitleButton = styled.button`
   cursor: pointer;
   color: black;
   &:hover {
-    color: #3437e0c7;
+    //    color: #3437e0c7;
+    color: rgba(88, 145, 195, 0.6);
+
     scale: 1.1;
   }
   &:after {
@@ -630,7 +634,7 @@ const StTitleButton = styled.button`
     left: 0;
     width: 100%;
     height: 2px;
-    background: #3437e0c7;
+    background: rgba(88, 145, 195, 0.6);
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
   }
