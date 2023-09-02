@@ -4,7 +4,7 @@ import Slack from "./projects/Slack";
 import Scrolls from "../hooks/Scrolls";
 
 const Projects = () => {
-  const scrollPosition = 2600;
+  const scrollPosition = 2800;
   const imageStyles = Scrolls(scrollPosition);
 
   return (
