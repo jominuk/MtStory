@@ -175,7 +175,6 @@ const CardFront = styled(CardSide)`
     height: 300px;
     color: white;
     font-size: 18px;
-    border-radius: 20px;
     opacity: 0;
     overflow: hidden;
     transition: opacity 0.3s;

@@ -33,6 +33,18 @@ const Skills = () => {
               </div>
             ))}
           </div>
+
+          <div className="more">
+            <button>more</button>
+            <button>more</button>
+            <button>more</button>
+            <button>more</button>
+            <button>more</button>
+            <button>more</button>
+            <button>more</button>
+            <button>more</button>
+            <button>more</button>
+          </div>
         </StSkills>
       </div>
     </>
@@ -73,7 +85,7 @@ const StSkills = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 100%;
+      width: 70%;
 
       div {
         background: rgb(238 238 238);
@@ -102,6 +114,13 @@ const StSkills = styled.div`
       to {
         left: 0;
       }
+    }
+
+    .more {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 99%;
     }
   }
 
