@@ -8,20 +8,62 @@ const Ezip = () => {
     setIsFlipped(!isFlipped);
   };
 
-  const naver = () => {
-    window.open("https://github.com/jominuk");
-  };
-
   return (
     <StEzipBox>
       <CardContainer onClick={handleCardFlip}>
         <CardInner flipped={isFlipped ? "true" : "false"}>
           <CardFront>
-            <p>Front of the Card</p>
+            <img
+              src={require("../../images/ezip.jpg")}
+              alt="eziplogo"
+              className="ezipMain"
+            />
           </CardFront>
           <CardBack>
-            <p>Back of the Card Ezip먼저</p>
-            <button onClick={naver}> 버튼 </button>
+            <div className="projectContainer">
+              <div className="titleBox">
+                <img
+                  src={require("../../images/eziplogo.jpg")}
+                  alt="ezipLogo"
+                  className="logo"
+                />
+                <p>ezip : 이집은</p>
+              </div>
+
+              <div className="pTe">
+                <p>
+                  ✌️집주인도, 중개사도 모르는 <br /> 진심이 담긴 후기를 알려주는
+                  플렛폼
+                </p>
+              </div>
+
+              <div className="smallTitle">Tech.</div>
+              <div className="smallContents">
+                JS, React, Redux-toolkit, React-Query <br /> Styled-component
+              </div>
+
+              <div className="detaBut">
+                <button
+                  onClick={() => {
+                    window.open("https://www.ezip.store/");
+                  }}
+                >
+                  Detail
+                </button>
+              </div>
+
+              <div className="btnGrp">
+                <button
+                  onClick={() => {
+                    window.open("https://www.ezip.store/");
+                  }}
+                >
+                  Demo
+                </button>
+
+                <button>Source Code</button>
+              </div>
+            </div>
           </CardBack>
         </CardInner>
       </CardContainer>
@@ -52,120 +94,72 @@ const StEzipBox = styled.div`
 `;
 
 const CardContainer = styled.div`
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  perspective: 1000px;
+
   @media screen and (min-width: 1400px) {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 50px;
-    perspective: 1000px;
   }
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 50px;
-    perspective: 1000px;
   }
 
   @media screen and (min-width: 600px) and (max-width: 999px) {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 50px;
-    perspective: 1000px;
   }
 
   @media screen and (max-width: 599px) {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 50px;
-    perspective: 1000px;
   }
 `;
 
 const CardInner = styled.div`
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform: ${(props) =>
+    props.flipped === "true" ? "rotateY(180deg)" : "none"};
   @media screen and (min-width: 1400px) {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    transform: ${(props) =>
-      props.flipped === "true" ? "rotateY(180deg)" : "none"};
   }
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    transform: ${(props) =>
-      props.flipped === "true" ? "rotateY(180deg)" : "none"};
   }
 
   @media screen and (min-width: 600px) and (max-width: 999px) {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    transform: ${(props) =>
-      props.flipped === "true" ? "rotateY(180deg)" : "none"};
   }
 
   @media screen and (max-width: 599px) {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    transform: ${(props) =>
-      props.flipped === "true" ? "rotateY(180deg)" : "none"};
   }
 `;
 
 const CardSide = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+
   @media screen and (min-width: 1400px) {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
   }
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
   }
 
   @media screen and (min-width: 600px) and (max-width: 999px) {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
   }
 
   @media screen and (max-width: 599px) {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
   }
 `;
 
 const CardFront = styled(CardSide)`
+  .ezipMain {
+    width: 100%;
+    height: 80%;
+  }
   @media screen and (min-width: 1400px) {
   }
 
@@ -180,19 +174,73 @@ const CardFront = styled(CardSide)`
 `;
 
 const CardBack = styled(CardSide)`
+  @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+  font-family: "Dongle", sans-serif;
+
+  transform: rotateY(180deg);
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .titleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+  }
+  .pTe {
+    font-size: 13px;
+  }
+
+  .smallTitle {
+    font-weight: 800;
+  }
+  .smallContents {
+    font-size: 14px;
+  }
+  .detaBut {
+    margin: 20px auto;
+    width: 60%;
+    button {
+      width: 100%;
+      height: 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px;
+      background: rgba(0, 161, 167, 0.3);
+      cursor: pointer;
+    }
+  }
+  .btnGrp {
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      width: 40%;
+      height: 20px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(0, 161, 167, 0.3);
+      color: white;
+      cursor: pointer;
+    }
+  }
+
   @media screen and (min-width: 1400px) {
-    transform: rotateY(180deg);
   }
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
-    transform: rotateY(180deg);
   }
 
   @media screen and (min-width: 600px) and (max-width: 999px) {
-    transform: rotateY(180deg);
   }
 
   @media screen and (max-width: 599px) {
-    transform: rotateY(180deg);
   }
 `;
