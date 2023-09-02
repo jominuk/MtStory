@@ -201,7 +201,7 @@ const StImgbox = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkXyq1%2FbtssCvslSVc%2Fs1yHBkkWHuskOJduK90l8K%2Fimg.jpg")
+    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIL8dX%2FbtssSosDy0K%2FgZ5E3CAsVyulKPxjhkCFuK%2Fimg.jpg")
       no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
@@ -285,7 +285,7 @@ const StImgbox = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkXyq1%2FbtssCvslSVc%2Fs1yHBkkWHuskOJduK90l8K%2Fimg.jpg")
+    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIL8dX%2FbtssSosDy0K%2FgZ5E3CAsVyulKPxjhkCFuK%2Fimg.jpg")
       no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
@@ -369,7 +369,7 @@ const StImgbox = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkXyq1%2FbtssCvslSVc%2Fs1yHBkkWHuskOJduK90l8K%2Fimg.jpg")
+    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIL8dX%2FbtssSosDy0K%2FgZ5E3CAsVyulKPxjhkCFuK%2Fimg.jpg")
       no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
