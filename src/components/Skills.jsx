@@ -1,9 +1,17 @@
 import styled from "styled-components";
 import Scrolls from "../hooks/Scrolls";
+import Javascript from "./modal/Javascript";
+import { useCallback, useState } from "react";
 
 const Skills = () => {
   const scrollPosition = 1800;
   const imageStyles = Scrolls(scrollPosition);
+
+  const [javascript, setJavascript] = useState(false);
+
+  const onCloseModal = useCallback(() => {
+    setJavascript(false);
+  }, []);
 
   return (
     <>
@@ -35,15 +43,23 @@ const Skills = () => {
           </div>
 
           <div className="more">
-            <button>more</button>
-            <button>more</button>
-            <button>more</button>
-            <button>more</button>
-            <button>more</button>
-            <button>more</button>
-            <button>more</button>
-            <button>more</button>
-            <button>more</button>
+            <button
+              onClick={() => {
+                setJavascript(true);
+              }}
+              className="moreBtn"
+            >
+              more
+            </button>
+            {javascript && <Javascript onCloseModal={onCloseModal} />}
+            <button className="moreBtn">more</button>
+            <button className="moreBtn">more</button>
+            <button className="moreBtn">more</button>
+            <button className="moreBtn">more</button>
+            <button className="moreBtn">more</button>
+            <button className="moreBtn">more</button>
+            <button className="moreBtn">more</button>
+            <button className="moreBtn">more</button>
           </div>
         </StSkills>
       </div>
@@ -120,13 +136,16 @@ const StSkills = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 99%;
+      .moreBtn {
+        height: 35px;
+      }
     }
   }
 
   @media screen and (max-width: 599px) {
     display: flex;
-    width: 80%;
+    justify-content: center;
+    width: 100%;
     height: 500px;
     margin: 0 auto;
 
@@ -134,6 +153,7 @@ const StSkills = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-right: 20px;
 
       div {
         width: 100px;
@@ -148,18 +168,28 @@ const StSkills = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 100%;
+      width: 20%;
+      margin-right: 20px;
 
       div {
         background: rgb(238 238 238);
         width: 95%;
         height: 35px;
         line-height: 35px;
-        text-align: right;
-        position: relative;
+        text-align: center;
         overflow: hidden;
         border-radius: 10px;
-        padding-right: 10px;
+      }
+    }
+
+    .more {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 5px;
+
+      .moreBtn {
+        height: 35px;
       }
     }
   }
