@@ -32,7 +32,7 @@ const Skills = () => {
 
           <div className="my-skill">
             {[80, 80, 60, 30, 70, 60, 65, 50, 20].map((percentage, index) => (
-              <div key={index}>
+              <div key={index} className="backGraph">
                 {percentage}%
                 <div
                   className="graph"
@@ -43,17 +43,17 @@ const Skills = () => {
           </div>
 
           <div className="more">
+            <button className="moreBtn">more</button>
+            <button className="moreBtn">more</button>
             <button
+              className="moreBtn"
               onClick={() => {
                 setJavascript(true);
               }}
-              className="moreBtn"
             >
               more
             </button>
             {javascript && <Javascript onCloseModal={onCloseModal} />}
-            <button className="moreBtn">more</button>
-            <button className="moreBtn">more</button>
             <button className="moreBtn">more</button>
             <button className="moreBtn">more</button>
             <button className="moreBtn">more</button>
@@ -103,26 +103,34 @@ const StSkills = styled.div`
       justify-content: space-between;
       width: 70%;
 
-      div {
-        background: rgb(238 238 238);
+      .backGraph {
+        position: relative;
         width: 95%;
         height: 35px;
-        line-height: 35px;
-        text-align: right;
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
         padding-right: 10px;
+        text-align: right;
+        border-radius: 10px;
+        line-height: 35px;
+        background: rgb(238 238 238);
+        overflow: hidden;
+      }
+
+      .detail {
+        background: red;
+        margin-top: 10px;
       }
 
       .graph {
-        background: rgb(0 161 167);
+        background: rgba(82, 215, 142, 0.6);
+        /* rgb(0 161 167); */
         height: 35px;
         position: absolute;
         top: 0;
         left: -100%;
         animation: slideIn 5s forwards 2s;
         border-radius: 0 10px 10px 0;
+        padding-right: 10px;
+        text-align: right;
       }
     }
 

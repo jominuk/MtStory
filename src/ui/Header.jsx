@@ -112,55 +112,46 @@ const Header = () => {
 export default Header;
 
 const StImgbox = styled.div`
-  @media screen and (min-width: 1400px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIL8dX%2FbtssSosDy0K%2FgZ5E3CAsVyulKPxjhkCFuK%2Fimg.jpg")
-      no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIL8dX%2FbtssSosDy0K%2FgZ5E3CAsVyulKPxjhkCFuK%2Fimg.jpg")
+    no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
 
-    .txt1 {
-      position: relative;
-      text-align: center;
-      font-size: 100px;
-      font-weight: 600;
-      margin-top: 250px;
-      animation: movehight 0.4s ease-in 1;
-      color: rgb(79, 82, 77, 0.9);
+  .txt1 {
+    position: relative;
+    text-align: center;
+    font-weight: 600;
 
-      @keyframes movehight {
-        0% {
-          top: -150px;
-          opacity: 0;
-        }
-        30% {
-          top: -100px;
-          opacity: 0.3;
-        }
-        60% {
-          top: -50px;
-          opacity: 0.6;
-        }
-        100% {
-          top: 0;
-          opacity: 1;
-        }
+    animation: movehight 0.4s ease-in 1;
+    @keyframes movehight {
+      0% {
+        top: -150px;
+        opacity: 0;
+      }
+      30% {
+        top: -100px;
+        opacity: 0.3;
+      }
+      60% {
+        top: -50px;
+        opacity: 0.6;
+      }
+      100% {
+        top: 0;
+        opacity: 1;
       }
     }
+  }
 
-    .txt2 {
-      position: relative;
-      text-align: center;
-      font-size: 50px;
-      line-height: 180px;
-      font-weight: 600;
-      animation: moveh 3s ease-in-out 1;
-      color: rgba(0, 0, 0, 0.7);
-    }
+  .txt2 {
+    line-height: 180px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    animation: moveh 2.5s ease-in-out 1;
 
     @keyframes moveh {
       from {
@@ -172,13 +163,31 @@ const StImgbox = styled.div`
         opacity: 1;
       }
     }
+  }
+
+  .down {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 200px;
+    margin-top: 100px;
+  }
+
+  //  =========================== StImgbox media 요소 ==================================
+
+  @media screen and (min-width: 1400px) {
+    height: 80vh;
+
+    .txt1 {
+      font-size: 100px;
+      margin-top: 250px;
+    }
+
+    .txt2 {
+      font-size: 50px;
+    }
 
     .down {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      bottom: 200px;
-      margin-top: 100px;
       animation: scrolldown 1300ms linear infinite;
     }
 
@@ -199,154 +208,54 @@ const StImgbox = styled.div`
   }
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIL8dX%2FbtssSosDy0K%2FgZ5E3CAsVyulKPxjhkCFuK%2Fimg.jpg")
-      no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
     height: 80vh;
 
     .txt1 {
-      position: relative;
-      text-align: center;
       font-size: 80px;
-      font-weight: 600;
       margin-top: 250px;
-      animation: movehight 0.4s ease-in 1;
-
-      @keyframes movehight {
-        0% {
-          top: -150px;
-          opacity: 0;
-        }
-        30% {
-          top: -100px;
-          opacity: 0.3;
-        }
-        60% {
-          top: -50px;
-          opacity: 0.6;
-        }
-        100% {
-          top: 0;
-          opacity: 1;
-        }
-      }
     }
 
     .txt2 {
       position: relative;
       text-align: center;
       font-size: 35px;
-      line-height: 180px;
-      font-weight: 600;
-      animation: moveh 2s ease-in-out 1;
-
-      @keyframes moveh {
-        from {
-          letter-spacing: 3vw;
-          opacity: 0;
-        }
-        to {
-          letter-spacing: normal;
-          opacity: 1;
-        }
-      }
     }
 
     .down {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      bottom: 200px;
-      margin-top: 100px;
       animation: scrolldown 1300ms linear infinite;
     }
 
     @keyframes scrolldown {
       0% {
-        bottom: 200px;
+        bottom: 220px;
         opacity: 1;
       }
       50% {
-        bottom: 180px;
+        bottom: 200px;
         opacity: 0.5;
       }
       100% {
-        bottom: 160px;
+        bottom: 180px;
         opacity: 0;
       }
     }
   }
 
   @media screen and (min-width: 600px) and (max-width: 999px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIL8dX%2FbtssSosDy0K%2FgZ5E3CAsVyulKPxjhkCFuK%2Fimg.jpg")
-      no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
 
     .txt1 {
-      position: relative;
-      text-align: center;
       font-size: 60px;
-      font-weight: 600;
       margin-top: 150px;
-      animation: movehight 0.4s ease-in 1;
-
-      @keyframes movehight {
-        0% {
-          top: -150px;
-          opacity: 0;
-        }
-        30% {
-          top: -100px;
-          opacity: 0.3;
-        }
-        60% {
-          top: -50px;
-          opacity: 0.6;
-        }
-        100% {
-          top: 0;
-          opacity: 1;
-        }
-      }
     }
 
     .txt2 {
       position: relative;
       text-align: center;
       font-size: 30px;
-      line-height: 180px;
-      font-weight: 600;
-      animation: moveh 2s ease-in-out 1;
-
-      @keyframes moveh {
-        from {
-          letter-spacing: 3vw;
-          opacity: 0;
-        }
-        to {
-          letter-spacing: normal;
-          opacity: 1;
-        }
-      }
     }
 
     .down {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      bottom: 200px;
-      margin-top: 100px;
       animation: scrolldown 1300ms linear infinite;
     }
 
@@ -367,70 +276,20 @@ const StImgbox = styled.div`
   }
 
   @media screen and (max-width: 599px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIL8dX%2FbtssSosDy0K%2FgZ5E3CAsVyulKPxjhkCFuK%2Fimg.jpg")
-      no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
 
     .txt1 {
-      position: relative;
-      text-align: center;
       font-size: 40px;
-      font-weight: 600;
       margin-top: 10px;
-      animation: movehight 0.4s ease-in 1;
-
-      @keyframes movehight {
-        0% {
-          top: -150px;
-          opacity: 0;
-        }
-        30% {
-          top: -100px;
-          opacity: 0.3;
-        }
-        60% {
-          top: -50px;
-          opacity: 0.6;
-        }
-        100% {
-          top: 0;
-          opacity: 1;
-        }
-      }
     }
 
     .txt2 {
       position: relative;
       text-align: center;
       font-size: 20px;
-      line-height: 180px;
-      font-weight: 600;
-      animation: moveh 2s ease-in-out 1;
-
-      @keyframes moveh {
-        from {
-          letter-spacing: 3vw;
-          opacity: 0;
-        }
-        to {
-          letter-spacing: normal;
-          opacity: 1;
-        }
-      }
     }
 
     .down {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      bottom: 200px;
-      margin-top: 100px;
       animation: scrolldown 1300ms linear infinite;
     }
 
@@ -452,138 +311,42 @@ const StImgbox = styled.div`
 `;
 
 const StHeader = styled.div`
-  @media screen and (min-width: 1400px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 100;
 
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 90%;
-      margin: 0 auto;
-      height: 100%;
-      font-size: 20px;
-    }
-
-    .title {
-      width: 80px;
-      height: 50px;
-    }
-
-    .headerContent {
-      display: flex;
-      justify-content: space-between;
-      width: 400px;
-    }
-
-    &.scrolled {
-      background: white;
-      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
-    }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    font-size: 20px;
   }
 
-  @media screen and (min-width: 1000px) and (max-width: 1399px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 100;
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 0 auto;
-      height: 100%;
-      font-size: 20px;
-    }
-
-    .title {
-      width: 80px;
-      height: 50px;
-    }
-
-    .headerContent {
-      display: flex;
-      justify-content: space-between;
-      width: 350px;
-    }
-
-    &.scrolled {
-      background: white;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    }
+  .title {
+    width: 80px;
+    height: 50px;
   }
 
-  @media screen and (min-width: 600px) and (max-width: 999px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 100;
+  .headerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+  }
 
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 0 auto;
-      height: 100%;
-      font-size: 20px;
-    }
-
-    .title {
-      width: 80px;
-      height: 50px;
-    }
-
-    .headerContent {
-      display: flex;
-      justify-content: space-between;
-      width: 350px;
-    }
-
-    &.scrolled {
-      background: white;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    }
+  &.scrolled {
+    background: white;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
   }
 
   @media screen and (max-width: 599px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    z-index: 100;
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 0 auto;
-      height: 100%;
-      font-size: 20px;
-    }
-
-    .title {
-      width: 80px;
-      height: 50px;
-    }
-
     .dropdownIcon {
       cursor: pointer;
-    }
-
-    &.scrolled {
-      background: white;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     }
 
     .mobileDropdown {
@@ -622,9 +385,7 @@ const StTitleButton = styled.button`
   cursor: pointer;
   color: black;
   &:hover {
-    //    color: #3437e0c7;
-    color: rgba(88, 145, 195, 0.6);
-
+    color: rgb(82, 215, 142);
     scale: 1.1;
   }
   &:after {
@@ -634,7 +395,7 @@ const StTitleButton = styled.button`
     left: 0;
     width: 100%;
     height: 2px;
-    background: rgba(88, 145, 195, 0.6);
+    background: rgb(82, 215, 142);
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
   }
