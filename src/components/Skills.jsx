@@ -1,16 +1,20 @@
+import { useCallback, useState } from "react";
 import styled from "styled-components";
 import Scrolls from "../hooks/Scrolls";
+
 import Javascript from "./modal/Javascript";
-import { useCallback, useState } from "react";
+import Html5 from "./modal/Html5";
 
 const Skills = () => {
   const scrollPosition = 1800;
   const imageStyles = Scrolls(scrollPosition);
 
   const [javascript, setJavascript] = useState(false);
+  const [html5, setHtml5] = useState(false);
 
   const onCloseModal = useCallback(() => {
     setJavascript(false);
+    setHtml5(false);
   }, []);
 
   return (
@@ -43,8 +47,18 @@ const Skills = () => {
           </div>
 
           <div className="more">
+            <button
+              className="moreBtn"
+              onClick={() => {
+                setHtml5(true);
+              }}
+            >
+              more
+            </button>
+            {html5 && <Html5 onCloseModal={onCloseModal} />}
+
             <button className="moreBtn">more</button>
-            <button className="moreBtn">more</button>
+
             <button
               className="moreBtn"
               onClick={() => {
@@ -54,6 +68,7 @@ const Skills = () => {
               more
             </button>
             {javascript && <Javascript onCloseModal={onCloseModal} />}
+
             <button className="moreBtn">more</button>
             <button className="moreBtn">more</button>
             <button className="moreBtn">more</button>
@@ -144,8 +159,17 @@ const StSkills = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       .moreBtn {
+        width: 80px;
         height: 35px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background: red;
+        }
       }
     }
   }

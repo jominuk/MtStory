@@ -1,18 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const Javascript = ({ onCloseModal }) => {
+const Html5 = ({ onCloseModal }) => {
   return (
     <ModalBackdrop>
       <StContainer>
-        <h2>JavaScript</h2>
+        <h2>HTML5</h2>
         <p>
-          javascript의 ES6문법인 화살표 함수, 클래스, 모듈 등
+          웹 표준 프로그래밍의 일관된 방식으로 요소를 정의하고
           <br />
-          다양한 문법과 기능을 활용할 수 있으며,
-          <br />
-          html문서와 상호 작용하고 웹 페이지의 콘텐츠를 동적으로 조작하여 사용자
-          경험을 개선할 수 있습니다.
+          구조화 하며, 시맨틱 태그를 사용하여 구조를 표현 할 수 있습니다.
         </p>
         <StCloseBut onClick={onCloseModal}>확인</StCloseBut>
       </StContainer>
@@ -20,7 +17,7 @@ const Javascript = ({ onCloseModal }) => {
   );
 };
 
-export default Javascript;
+export default Html5;
 
 const ModalBackdrop = styled.div`
   display: flex;
@@ -65,6 +62,7 @@ const StContainer = styled.div`
 
   p {
     font-size: 15px;
+    line-height: 30px;
   }
 
   @media screen and (max-width: 599px) {
