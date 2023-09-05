@@ -61,6 +61,7 @@ const StContainer = styled.div`
 
   p {
     font-size: 15px;
+    line-height: 30px;
   }
 
   @media screen and (max-width: 599px) {
