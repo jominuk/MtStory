@@ -4,6 +4,13 @@ import Scrolls from "../hooks/Scrolls";
 
 import Javascript from "./modal/Javascript";
 import Html5 from "./modal/Html5";
+import Css3 from "./modal/Css3";
+import Typescript from "./modal/Typescript";
+import React from "./modal/React";
+import ReduxToolkit from "./modal/ReduxToolkit";
+import ReactQuery from "./modal/ReactQuery";
+import SWR from "./modal/Swr";
+import Socketio from "./modal/SocketIo";
 
 const Skills = () => {
   const scrollPosition = 1800;
@@ -11,10 +18,24 @@ const Skills = () => {
 
   const [javascript, setJavascript] = useState(false);
   const [html5, setHtml5] = useState(false);
+  const [css3, setCss3] = useState(false);
+  const [typescript, setTypescript] = useState(false);
+  const [react, setReact] = useState(false);
+  const [redux, setRedux] = useState(false);
+  const [query, setQuery] = useState(false);
+  const [swr, setSwr] = useState(false);
+  const [socket, setSocket] = useState(false);
 
   const onCloseModal = useCallback(() => {
     setJavascript(false);
     setHtml5(false);
+    setCss3(false);
+    setTypescript(false);
+    setReact(false);
+    setRedux(false);
+    setQuery(false);
+    setSwr(false);
+    setSocket(false);
   }, []);
 
   return (
@@ -57,7 +78,15 @@ const Skills = () => {
             </button>
             {html5 && <Html5 onCloseModal={onCloseModal} />}
 
-            <button className="moreBtn">more</button>
+            <button
+              className="moreBtn"
+              onClick={() => {
+                setCss3(true);
+              }}
+            >
+              more
+            </button>
+            {css3 && <Css3 onCloseModal={onCloseModal} />}
 
             <button
               className="moreBtn"
@@ -69,12 +98,65 @@ const Skills = () => {
             </button>
             {javascript && <Javascript onCloseModal={onCloseModal} />}
 
-            <button className="moreBtn">more</button>
-            <button className="moreBtn">more</button>
-            <button className="moreBtn">more</button>
-            <button className="moreBtn">more</button>
-            <button className="moreBtn">more</button>
-            <button className="moreBtn">more</button>
+            <button
+              className="moreBtn"
+              onClick={() => {
+                setTypescript(true);
+              }}
+            >
+              more
+            </button>
+            {typescript && <Typescript onCloseModal={onCloseModal} />}
+
+            <button
+              className="moreBtn"
+              onClick={() => {
+                setReact(true);
+              }}
+            >
+              more
+            </button>
+            {react && <React onCloseModal={onCloseModal} />}
+
+            <button
+              className="moreBtn"
+              onClick={() => {
+                setRedux(true);
+              }}
+            >
+              more
+            </button>
+            {redux && <ReduxToolkit onCloseModal={onCloseModal} />}
+
+            <button
+              className="moreBtn"
+              onClick={() => {
+                setQuery(true);
+              }}
+            >
+              more
+            </button>
+            {query && <ReactQuery onCloseModal={onCloseModal} />}
+
+            <button
+              className="moreBtn"
+              onClick={() => {
+                setSwr(true);
+              }}
+            >
+              more
+            </button>
+            {swr && <SWR onCloseModal={onCloseModal} />}
+
+            <button
+              className="moreBtn"
+              onClick={() => {
+                setSocket(true);
+              }}
+            >
+              more
+            </button>
+            {socket && <Socketio onCloseModal={onCloseModal} />}
           </div>
         </StSkills>
       </div>
