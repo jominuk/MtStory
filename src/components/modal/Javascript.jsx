@@ -6,12 +6,9 @@ const Javascript = ({ onCloseModal }) => {
       <StContainer>
         <h2>JavaScript</h2>
         <p>
-          javascript의 ES6문법인 화살표 함수, 클래스, 모듈 등
-          <br />
-          다양한 문법과 기능을 활용할 수 있으며,
-          <br />
-          html문서와 상호 작용하고 웹 페이지의 콘텐츠를 동적으로 조작하여 사용자
-          경험을 개선할 수 있습니다.
+          javascript의 ES6문법인 화살표 함수, 클래스, 모듈 등 다양한 문법과
+          기능을 활용할 수 있으며, html문서와 상호 작용하고 웹 페이지의 콘텐츠를
+          동적으로 조작하여 사용자 경험을 개선할 수 있습니다.
         </p>
         <StCloseBut onClick={onCloseModal}>확인</StCloseBut>
       </StContainer>
@@ -41,7 +38,7 @@ const StContainer = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 460px;
   height: 200px;
   padding: 0 20px 50px 20px;
   font-family: "Sunflower", sans-serif;

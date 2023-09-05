@@ -38,7 +38,7 @@ const StContainer = styled.div`
   top: 50%;
   left: 50%;
   width: 450px;
-  height: 200px;
+  height: 180px;
   padding: 0 20px 50px 20px;
   font-family: "Sunflower", sans-serif;
   border: 1px solid powderblue;

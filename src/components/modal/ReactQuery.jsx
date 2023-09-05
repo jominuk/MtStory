@@ -7,10 +7,8 @@ const ReactQuery = ({ onCloseModal }) => {
         <h2>React-Query</h2>
         <p>
           useQuery를 사용하여 데이터를 쉽게 가져오고 캐시할 수 있으며 비동기
-          작업 상태 관리를 할 수 있습니다.
-          <br />
-          또한, useMutate로 돌연변이 처리를 간소화하여 서버 데이터를 쉽게
-          업데이트 할 수 있습니다
+          작업 상태 관리를 할 수 있습니다. 또한, useMutate로 돌연변이 처리를
+          간소화하여 서버 데이터를 쉽게 업데이트 할 수 있습니다
         </p>
         <StCloseBut onClick={onCloseModal}>확인</StCloseBut>
       </StContainer>
@@ -40,7 +38,7 @@ const StContainer = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 460px;
   height: 200px;
   padding: 0 20px 50px 20px;
   font-family: "Sunflower", sans-serif;

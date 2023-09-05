@@ -6,9 +6,8 @@ const Css3 = ({ onCloseModal }) => {
       <StContainer>
         <h2>CSS3</h2>
         <p>
-          position과 display를 적절히 사용해 반응형 웹과
-          <br />
-          다양한 애니메이션을 제어 활용할 수 있습니다.
+          position과 display를 적절히 사용해 반응형 웹과 다양한 애니메이션을
+          제어 활용할 수 있습니다.
         </p>
         <StCloseBut onClick={onCloseModal}>확인</StCloseBut>
       </StContainer>
@@ -39,7 +38,7 @@ const StContainer = styled.div`
   top: 50%;
   left: 50%;
   width: 450px;
-  height: 200px;
+  height: 180px;
   padding: 0 20px 50px 20px;
   font-family: "Sunflower", sans-serif;
   border: 1px solid powderblue;

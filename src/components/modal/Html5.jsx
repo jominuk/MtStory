@@ -6,9 +6,8 @@ const Html5 = ({ onCloseModal }) => {
       <StContainer>
         <h2>HTML5</h2>
         <p>
-          웹 표준 프로그래밍의 일관된 방식으로 요소를 정의하고
-          <br />
-          구조화 하며, 시맨틱 태그를 사용하여 구조를 표현 할 수 있습니다.
+          웹 표준 프로그래밍의 일관된 방식으로 요소를 정의하고 구조화 하며,
+          시맨틱 태그를 사용하여 구조를 표현 할 수 있습니다.
         </p>
         <StCloseBut onClick={onCloseModal}>확인</StCloseBut>
       </StContainer>
@@ -39,7 +38,7 @@ const StContainer = styled.div`
   top: 50%;
   left: 50%;
   width: 450px;
-  height: 200px;
+  height: 180px;
   padding: 0 20px 50px 20px;
   font-family: "Sunflower", sans-serif;
   border: 1px solid powderblue;
