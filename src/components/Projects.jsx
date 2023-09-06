@@ -40,21 +40,17 @@ const StTitle = styled.div`
 `;
 
 const StProject = styled.div`
-  @media screen and (min-width: 1000px) {
-    width: 60%;
+  @media screen and (min-width: 1300px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
     margin: 0 auto;
-
-    .ProjectBox {
-      display: flex;
-    }
   }
 
-  @media screen and (max-width: 999px) {
+  @media screen and (max-width: 1299px) {
     display: flex;
     flex-direction: column;
-
-    .ProjectBox {
-      margin: 0 auto;
-    }
+    align-items: center;
   }
 `;

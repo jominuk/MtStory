@@ -75,6 +75,13 @@ const StTitle = styled.div`
 `;
 
 const StContainer = styled.div`
+  .proflie-img {
+    border-radius: 50%;
+    background: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcvaBCy%2FbtssaAg8bo4%2FrTI2rCaylhSz9w4o62GVOk%2Fimg.jpg)
+      no-repeat center center;
+    background-size: cover;
+  }
+
   @media screen and (min-width: 1400px) {
     display: flex;
     width: 80%;
@@ -82,6 +89,11 @@ const StContainer = styled.div`
     border-radius: 30px;
     margin: 0% auto;
     box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+
+    .font {
+      margin-right: 20px;
+      font-size: 24px;
+    }
 
     .imgGro {
       display: flex;
@@ -92,10 +104,6 @@ const StContainer = styled.div`
     .proflie-img {
       width: 250px;
       height: 380px;
-      border-radius: 50%;
-      background: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcvaBCy%2FbtssaAg8bo4%2FrTI2rCaylhSz9w4o62GVOk%2Fimg.jpg)
-        no-repeat center center;
-      background-size: cover;
     }
 
     .content {
@@ -108,11 +116,6 @@ const StContainer = styled.div`
         justify-content: center;
         text-align: left;
         padding: 10px 0 10px 40px;
-
-        .font {
-          margin-right: 20px;
-          font-size: 24px;
-        }
       }
 
       .sns {
@@ -126,11 +129,16 @@ const StContainer = styled.div`
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
     display: flex;
-    width: 80%;
+    width: 90%;
     height: 500px;
     margin: 0% auto;
     border-radius: 30px;
     box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+
+    .font {
+      margin-right: 10px;
+      font-size: 18px;
+    }
 
     .imgGro {
       display: flex;
@@ -141,10 +149,6 @@ const StContainer = styled.div`
     .proflie-img {
       width: 250px;
       height: 380px;
-      border-radius: 50%;
-      background: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcvaBCy%2FbtssaAg8bo4%2FrTI2rCaylhSz9w4o62GVOk%2Fimg.jpg)
-        no-repeat center center;
-      background-size: cover;
     }
 
     .content {
@@ -157,11 +161,6 @@ const StContainer = styled.div`
         justify-content: center;
         text-align: left;
         padding: 10px 0 10px 40px;
-
-        .font {
-          margin-right: 20px;
-          font-size: 24px;
-        }
       }
 
       .sns {
@@ -182,22 +181,23 @@ const StContainer = styled.div`
       height: 300px;
       margin: 0 auto;
       border-radius: 20px;
-      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
     }
     .proflie-img {
       width: 250px;
       height: 250px;
-      border-radius: 50%;
-      background: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcvaBCy%2FbtssaAg8bo4%2FrTI2rCaylhSz9w4o62GVOk%2Fimg.jpg)
-        no-repeat center center;
-      background-size: cover;
+    }
+
+    .font {
+      margin-right: 10px;
+      font-size: 18px;
     }
 
     .content {
-      margin: 20px auto;
       width: 80%;
+      margin: 20px auto;
       border-radius: 20px;
-      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
 
       .proflie-imfor {
         height: 370px;
@@ -205,12 +205,7 @@ const StContainer = styled.div`
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        padding: 10px 0 10px 110px;
-
-        .font {
-          margin-right: 20px;
-          font-size: 24px;
-        }
+        padding: 10px 0 10px 60px;
       }
 
       .sns {
@@ -228,37 +223,35 @@ const StContainer = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 90%;
+
       height: 300px;
       margin: 0 auto;
-      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
     }
+
+    .font {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
     .proflie-img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      background: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcvaBCy%2FbtssaAg8bo4%2FrTI2rCaylhSz9w4o62GVOk%2Fimg.jpg)
-        no-repeat center center;
-      background-size: cover;
+      width: 230px;
+      height: 230px;
     }
 
     .content {
       margin: 20px auto;
-      width: 90%;
-      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
 
       .proflie-imfor {
-        height: 370px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        padding: 10px 0 10px 70px;
-
-        .font {
-          margin-right: 20px;
-          font-size: 24px;
-        }
+        padding: 10px 0 10px 30px;
       }
 
       .sns {

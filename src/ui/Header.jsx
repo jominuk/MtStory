@@ -41,12 +41,6 @@ const Header = () => {
 
   return (
     <>
-      <StImgbox>
-        <div className="txt1"> FRONT-END DEV.</div>
-        <div className="txt2"> fortfolio </div>
-        <img src={require("../images/down.png")} className="down" />
-      </StImgbox>
-
       <StHeader className={`${scrolled ? "scrolled" : ""}`}>
         <nav>
           <a href="/">
@@ -111,205 +105,6 @@ const Header = () => {
 
 export default Header;
 
-const StImgbox = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FIL8dX%2FbtssSosDy0K%2FgZ5E3CAsVyulKPxjhkCFuK%2Fimg.jpg")
-    no-repeat top center;
-  background-size: cover;
-  background-attachment: fixed;
-
-  .txt1 {
-    position: relative;
-    text-align: center;
-    font-weight: 600;
-
-    animation: movehight 0.4s ease-in 1;
-    @keyframes movehight {
-      0% {
-        top: -150px;
-        opacity: 0;
-      }
-      30% {
-        top: -100px;
-        opacity: 0.3;
-      }
-      60% {
-        top: -50px;
-        opacity: 0.6;
-      }
-      100% {
-        top: 0;
-        opacity: 1;
-      }
-    }
-  }
-
-  .txt2 {
-    line-height: 180px;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.8);
-    animation: moveh 2.5s ease-in-out 1;
-
-    @keyframes moveh {
-      from {
-        letter-spacing: 3vw;
-        opacity: 0;
-      }
-      to {
-        letter-spacing: normal;
-        opacity: 1;
-      }
-    }
-  }
-
-  .down {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    bottom: 200px;
-    margin-top: 100px;
-  }
-
-  //  =========================== StImgbox media 요소 ==================================
-
-  @media screen and (min-width: 1400px) {
-    height: 80vh;
-
-    .txt1 {
-      font-size: 100px;
-      margin-top: 250px;
-    }
-
-    .txt2 {
-      font-size: 50px;
-    }
-
-    .down {
-      animation: scrolldown 1300ms linear infinite;
-    }
-
-    @keyframes scrolldown {
-      0% {
-        bottom: 220px;
-        opacity: 1;
-      }
-      50% {
-        bottom: 200px;
-        opacity: 0.5;
-      }
-      100% {
-        bottom: 180px;
-        opacity: 0;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1000px) and (max-width: 1399px) {
-    height: 80vh;
-
-    .txt1 {
-      font-size: 80px;
-      margin-top: 250px;
-    }
-
-    .txt2 {
-      position: relative;
-      text-align: center;
-      font-size: 35px;
-    }
-
-    .down {
-      animation: scrolldown 1300ms linear infinite;
-    }
-
-    @keyframes scrolldown {
-      0% {
-        bottom: 220px;
-        opacity: 1;
-      }
-      50% {
-        bottom: 200px;
-        opacity: 0.5;
-      }
-      100% {
-        bottom: 180px;
-        opacity: 0;
-      }
-    }
-  }
-
-  @media screen and (min-width: 600px) and (max-width: 999px) {
-    height: 100vh;
-
-    .txt1 {
-      font-size: 60px;
-      margin-top: 150px;
-    }
-
-    .txt2 {
-      position: relative;
-      text-align: center;
-      font-size: 30px;
-    }
-
-    .down {
-      animation: scrolldown 1300ms linear infinite;
-    }
-
-    @keyframes scrolldown {
-      0% {
-        bottom: 40px;
-        opacity: 1;
-      }
-      50% {
-        bottom: 20px;
-        opacity: 0.5;
-      }
-      100% {
-        bottom: 0px;
-        opacity: 0;
-      }
-    }
-  }
-
-  @media screen and (max-width: 599px) {
-    height: 100vh;
-
-    .txt1 {
-      font-size: 40px;
-      margin-top: 10px;
-    }
-
-    .txt2 {
-      position: relative;
-      text-align: center;
-      font-size: 20px;
-    }
-
-    .down {
-      animation: scrolldown 1300ms linear infinite;
-    }
-
-    @keyframes scrolldown {
-      0% {
-        bottom: 40px;
-        opacity: 1;
-      }
-      50% {
-        bottom: 20px;
-        opacity: 0.5;
-      }
-      100% {
-        bottom: 0px;
-        opacity: 0;
-      }
-    }
-  }
-`;
-
 const StHeader = styled.div`
   position: fixed;
   top: 0;
@@ -345,6 +140,8 @@ const StHeader = styled.div`
   }
 
   @media screen and (max-width: 599px) {
+    background: white;
+
     .dropdownIcon {
       cursor: pointer;
     }

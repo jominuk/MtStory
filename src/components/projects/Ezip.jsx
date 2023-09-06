@@ -79,12 +79,10 @@ export default Ezip;
 const StEzipBox = styled.div`
   @media screen and (min-width: 1400px) {
     width: 100%;
-    margin-left: 40px;
   }
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
     width: 100%;
-    margin-left: 20px;
   }
 
   @media screen and (min-width: 600px) and (max-width: 999px) {
