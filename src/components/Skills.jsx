@@ -176,7 +176,7 @@ const StTitle = styled.div`
 const StSkills = styled.div`
   @media screen and (min-width: 600px) {
     display: flex;
-    width: 80%;
+    width: 70%;
     height: 500px;
     margin: 0 auto;
 

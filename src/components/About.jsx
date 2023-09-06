@@ -84,7 +84,7 @@ const StContainer = styled.div`
 
   @media screen and (min-width: 1400px) {
     display: flex;
-    width: 80%;
+    width: 70%;
     height: 500px;
     border-radius: 30px;
     margin: 0% auto;

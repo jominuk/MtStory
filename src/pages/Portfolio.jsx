@@ -33,6 +33,7 @@ const Portfolio = () => {
             개발 역량과 스킬을 쌓아왔습니다. 여전히 새로운 기술에 대한 도전과
             두려움 없이 항상 성장하는 자세를 가지고 있으며, 실질적인 도움이 되는
             지식을 공부하고 확보하여
+            <br />
             <label className="front">프론트엔드 개발자</label>로서 성장하고
             있습니다.
           </p>
@@ -267,7 +268,7 @@ const StPortfolio = styled.div`
     color: rgba(0, 0, 0, 0.6);
   }
   .content {
-    width: 60%;
+    width: 55%;
     margin: 0 auto;
     line-height: 40px;
     font-weight: 600;
