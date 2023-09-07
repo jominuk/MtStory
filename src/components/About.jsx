@@ -129,7 +129,7 @@ const StContainer = styled.div`
 
   @media screen and (min-width: 1000px) and (max-width: 1399px) {
     display: flex;
-    width: 90%;
+    width: 85%;
     height: 500px;
     margin: 0% auto;
     border-radius: 30px;

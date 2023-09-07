@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Ezip = () => {
+  const navigate = useNavigate();
+
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardFlip = () => {
@@ -48,7 +51,7 @@ const Ezip = () => {
               <div className="detaBut">
                 <button
                   onClick={() => {
-                    window.open("https://www.ezip.store/");
+                    navigate("/ezipdetail");
                   }}
                 >
                   Detail

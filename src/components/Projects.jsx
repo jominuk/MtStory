@@ -40,15 +40,15 @@ const StTitle = styled.div`
 `;
 
 const StProject = styled.div`
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1450px) {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
 
-  @media screen and (max-width: 1299px) {
+  @media screen and (max-width: 1449px) {
     display: flex;
     flex-direction: column;
     align-items: center;

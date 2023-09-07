@@ -5,14 +5,14 @@ const Scrolls = (scrollPosition) => {
 
   const handleScroll = useCallback(() => {
     setLocations(window.scrollY);
-  });
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  });
 
   const imageStyles = {
     position: Locations > scrollPosition ? "static" : "relative",
