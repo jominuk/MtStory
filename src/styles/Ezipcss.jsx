@@ -114,6 +114,24 @@ export const Ezipcss = {
   `,
 
 
+  StVideoBox: styled.div`
+
+
+  @media screen and (max-width: 599px) {
+    width: 350px;
+    height: 230px;
+    margin: 0 auto;
+  
+    .video {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  
+  `
+
+  ,
+
   StWork: styled.div`
     @media screen and (min-width: 1000px) {
       display: flex;
@@ -177,8 +195,8 @@ export const Ezipcss = {
       margin-top: 50px;
 
 .titleLogoBox {
-  width: 300px;
-  height: 180px;
+  width: 280px;
+  height: 150px;
   margin:0 auto;
 }
       .kakaoLogin {
@@ -193,7 +211,7 @@ export const Ezipcss = {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        height: 280px;
+        height: 350px;
       }
 
       .community {

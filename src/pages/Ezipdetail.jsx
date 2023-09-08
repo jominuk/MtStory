@@ -152,15 +152,17 @@ const Ezipdetail = () => {
           </Ezipcss.StWork>
 
            <Ezipcss.StWork>
-
+            <Ezipcss.StVideoBox>
               <ReactPlayer
                 url="video/mypage.mp4"
-                width= "400px"
-                height= "280px"
+                 width= "400px"
+                 height= "280px"
+                className="video"
                 muted={true}
                 playing={true}
                 loop={true}
              />
+             </Ezipcss.StVideoBox>
 
 
             <div className="loginContent">
@@ -173,16 +175,18 @@ const Ezipdetail = () => {
             </div>
           </Ezipcss.StWork>
 
-          {/*<Ezipcss.StWork>
-          <Ezipcss.VideoBox>
+          <Ezipcss.StWork>
+          <Ezipcss.StVideoBox>
             <ReactPlayer
               url="video/review.mp4"
-              className="Video"
+              className="video"
+              width= "400px"
+                 height= "280px"
               muted={true} //chrome정책으로 인해 자동 재생을 위해 mute 옵션을 true로 해주었다.
               playing={true}
               loop={true}
             />
-            </Ezipcss.VideoBox>
+            </Ezipcss.StVideoBox>
             <div className="loginContent">
               <h3>◎ 리뷰 페이지 </h3>
               <p>
@@ -215,7 +219,7 @@ const Ezipdetail = () => {
                 있다.
               </p>
             </div>
-          </Ezipcss.StWork> */}
+          </Ezipcss.StWork> 
         </div>
 
         {/* ===============================트러블 슈팅 ========================= */}
