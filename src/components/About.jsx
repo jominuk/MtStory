@@ -195,7 +195,7 @@ const StContainer = styled.div`
 
     .content {
       width: 80%;
-      margin: 20px auto;
+      margin: 50px auto;
       border-radius: 20px;
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
 
@@ -241,7 +241,7 @@ const StContainer = styled.div`
     }
 
     .content {
-      margin: 20px auto;
+      margin: 50px auto;
       border-radius: 20px;
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
 
