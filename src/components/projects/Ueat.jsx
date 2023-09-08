@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-const Ezip = () => {
+const Ueat = () => {
   const navigate = useNavigate();
 
   const [isFlipped, setIsFlipped] = useState(false);
@@ -17,7 +17,7 @@ const Ezip = () => {
         <CardInner flipped={isFlipped ? "true" : "false"}>
           <CardFront>
             <img
-              src={require("../../images/ezip.jpg")}
+              src={require("../../images/mainUeat.png")}
               alt="eziplogo"
               className="ezipMain"
             />
@@ -29,53 +29,37 @@ const Ezip = () => {
             <div className="projectContainer">
               <div className="titleBox">
                 <img
-                  src={require("../../images/eziplogo.jpg")}
+                  src={require("../../images/ueatLogo.png")}
                   alt="ezipLogo"
                   className="logo"
                 />
-                <p>ezip : 이집은</p>
+                <p>UEAT : 유 잇</p>
               </div>
 
               <div className="pTe">
                 <p>
-                  ✌️집주인도, 중개사도 모르는 <br /> 진심이 담긴 후기를 알려주는
-                  플렛폼
+                  ✌️먹고 싶은 음식을 선택할 수 없는 <br /> 결정하기 힘든 분들
+                  위해 제작한 플렛폼
                 </p>
               </div>
 
               <div className="smallTitle">Tech.</div>
               <div className="smallContents">
-                JS, React, Redux-toolkit, React-Query <br /> Styled-component
+                JS, React, Redux-toolkit, <br /> Styled-component
               </div>
 
               <div className="detaBut">
                 <button
                   onClick={() => {
-                    navigate("/ezipdetail");
+                    navigate("/ueatdetail");
                   }}
                 >
                   Detail
                 </button>
               </div>
 
-              <div className="btnGrp">
-                <button
-                  onClick={() => {
-                    window.open("https://www.ezip.store/");
-                  }}
-                >
-                  Demo
-                </button>
-
-                <button
-                  onClick={() => {
-                    window.open(
-                      "https://github.com/jominuk/Final_Project-ezip"
-                    );
-                  }}
-                >
-                  Source Code
-                </button>
+              <div>
+                <button className="btnGrp">Source Code</button>
               </div>
             </div>
           </CardBack>
@@ -85,7 +69,7 @@ const Ezip = () => {
   );
 };
 
-export default Ezip;
+export default Ueat;
 
 const StEzipBox = styled.div`
   @media screen and (min-width: 1400px) {
@@ -212,18 +196,14 @@ const CardBack = styled(CardSide)`
       cursor: pointer;
     }
   }
-  .btnGrp {
-    display: flex;
-    justify-content: space-around;
 
-    button {
-      width: 40%;
-      height: 20px;
-      border: none;
-      border-radius: 10px;
-      background: rgba(0, 161, 167, 0.3);
-      color: white;
-      cursor: pointer;
-    }
+  .btnGrp {
+    width: 40%;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 161, 167, 0.3);
+    color: white;
+    cursor: pointer;
   }
 `;

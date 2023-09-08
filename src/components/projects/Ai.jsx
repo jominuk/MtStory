@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-const Ezip = () => {
+const Ueat = () => {
   const navigate = useNavigate();
 
   const [isFlipped, setIsFlipped] = useState(false);
@@ -17,7 +17,7 @@ const Ezip = () => {
         <CardInner flipped={isFlipped ? "true" : "false"}>
           <CardFront>
             <img
-              src={require("../../images/ezip.jpg")}
+              src={require("../../images/ChatAi.png")}
               alt="eziplogo"
               className="ezipMain"
             />
@@ -28,30 +28,22 @@ const Ezip = () => {
           <CardBack>
             <div className="projectContainer">
               <div className="titleBox">
-                <img
-                  src={require("../../images/eziplogo.jpg")}
-                  alt="ezipLogo"
-                  className="logo"
-                />
-                <p>ezip : 이집은</p>
+                <p>Ai : 인공지능 Chat</p>
               </div>
 
               <div className="pTe">
-                <p>
-                  ✌️집주인도, 중개사도 모르는 <br /> 진심이 담긴 후기를 알려주는
-                  플렛폼
-                </p>
+                <p>✌️ 편리하게 사용할 수 있는 인공지능 Chat 플랫폼</p>
               </div>
 
               <div className="smallTitle">Tech.</div>
               <div className="smallContents">
-                JS, React, Redux-toolkit, React-Query <br /> Styled-component
+                JS, React, Typescript <br /> Styled-component
               </div>
 
               <div className="detaBut">
                 <button
                   onClick={() => {
-                    navigate("/ezipdetail");
+                    navigate("/aidetail");
                   }}
                 >
                   Detail
@@ -61,7 +53,7 @@ const Ezip = () => {
               <div className="btnGrp">
                 <button
                   onClick={() => {
-                    window.open("https://www.ezip.store/");
+                    window.open("https://ai-chat-gamma-weld.vercel.app/");
                   }}
                 >
                   Demo
@@ -69,9 +61,7 @@ const Ezip = () => {
 
                 <button
                   onClick={() => {
-                    window.open(
-                      "https://github.com/jominuk/Final_Project-ezip"
-                    );
+                    window.open("https://github.com/jominuk/Ai-Chat");
                   }}
                 >
                   Source Code
@@ -85,7 +75,7 @@ const Ezip = () => {
   );
 };
 
-export default Ezip;
+export default Ueat;
 
 const StEzipBox = styled.div`
   @media screen and (min-width: 1400px) {
@@ -184,11 +174,6 @@ const CardBack = styled(CardSide)`
     font-size: 20px;
     font-weight: 800;
   }
-  .logo {
-    width: 45px;
-    height: 45px;
-    margin-right: 20px;
-  }
   .pTe {
     font-size: 13px;
   }
@@ -212,6 +197,7 @@ const CardBack = styled(CardSide)`
       cursor: pointer;
     }
   }
+
   .btnGrp {
     display: flex;
     justify-content: space-around;

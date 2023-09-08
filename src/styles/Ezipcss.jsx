@@ -56,10 +56,14 @@ export const Ezipcss = {
       border: 3px solid #ccc;
       border-radius: 30px;
       margin-bottom: 50px;
+
+      div {
+        margin-top: 30px;
+      }
     }
 
     .trouble {
-      height: 130px;
+      height: 120px;
       border-bottom: 2px dashed #ccc;
     }
     .memorize1 {
@@ -113,24 +117,18 @@ export const Ezipcss = {
     }
   `,
 
-
   StVideoBox: styled.div`
+    @media screen and (max-width: 599px) {
+      width: 350px;
+      height: 230px;
+      margin: 0 auto;
 
-
-  @media screen and (max-width: 599px) {
-    width: 350px;
-    height: 230px;
-    margin: 0 auto;
-  
-    .video {
-      width: 100% !important;
-      height: 100% !important;
+      .video {
+        width: 100% !important;
+        height: 100% !important;
+      }
     }
-  }
-  
-  `
-
-  ,
+  `,
 
   StWork: styled.div`
     @media screen and (min-width: 1000px) {
@@ -149,7 +147,7 @@ export const Ezipcss = {
         display: flex;
         flex-direction: column;
         justify-content: center;
-       
+
         height: 270px;
         padding: 0 0 0 30px;
       }
@@ -164,7 +162,6 @@ export const Ezipcss = {
     }
 
     @media screen and (min-width: 500px) and (max-width: 999px) {
-
       .kakaoLogin {
         width: 400px;
         height: 280px;
@@ -187,18 +184,17 @@ export const Ezipcss = {
           no-repeat center center;
         background-size: cover;
       }
-   
     }
 
     @media screen and (max-width: 599px) {
       width: 100%;
       margin-top: 50px;
 
-.titleLogoBox {
-  width: 320px;
-  height:220px;
-  margin:0 auto;
-}
+      .titleLogoBox {
+        width: 320px;
+        height: 220px;
+        margin: 0 auto;
+      }
       .kakaoLogin {
         width: 100%;
         height: 100%;

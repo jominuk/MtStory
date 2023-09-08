@@ -44,17 +44,21 @@ const Ezipdetail = () => {
         <div>
           <h2 className="h3Title">📌 프로젝트 소개 </h2>
           <div className="ezipContent">
-            "이집은(ezip)" 프로젝트는 내가 직접 글도 올릴 수 있으며 솔직 담백한
-            이야기와 사소한 후기 를 공유할 수 있게 만든 플렛폼 입니다. 회의
-            당시의 부동산 관련 뉴스가 많이 나왔었습니다. 또한, 저희 팀원들 상당
-            수가 혼자 살면서 부동산을 돌아다니면서 방문을 햇지만, 만족하는 집도
-            안나와서 헛걸음 했던 경우가 상당수고 막상 다른 플렛폼의 이미지를
-            보면서 만족해서 갔지만 보여진 이미지랑 너무 다른 방과 구조가 있어
-            실망했던 경험도 나누었습니다. 저 역시 이런 경험을 해봤기에 다들
-            솔직한 후기를 가지면서 나눌 수 있는 플렛폼을 개발하고자 했습니다.
-            또한 직접 부동산에 알려서 매물을 내놓는게 아닌 내가 직접 매물을
-            내놓고 후기 작성을 한 후에 부동산과의 계약을 하는게 편하다 생각이
-            들었습니다.
+            프로젝트 '이집은(ezip)'은 직접 글을 게시하고, 솔직하고 정직한
+            이야기와 소소한 후기를 나눌 수 있는 플랫폼으로 설계되었습니다.
+            프로젝트 초기 회의 때, 부동산 관련 뉴스가 빈번하게 보도되었고, 저희
+            팀원들 중 많은 사람들이 부동산 시장에서 만족스러운 집을 찾지 못하며
+            헛걸음을 친 경험이 있었습니다. 이런 경험을 통해, 우리는 솔직한
+            후기를 공유하고 서로에게 도움을 주는 플랫폼의 필요성을 깨달았습니다.
+            또한, 다른 부동산 플랫폼에서는 보여진 이미지와 실제 방과 구조가
+            상이하여 실망한 경험이 흔했습니다. 따라서, 우리는 '이집은(ezip)'을
+            개발하게 되었습니다. 이 플랫폼은 부동산에 직접 매물을 올리지 않고도
+            직접 매물을 게시하고 후기를 작성한 후에 부동산과의 계약을 편리하게
+            체결할 수 있는 방법을 제공합니다. 우리의 목표는 진솔한 경험을
+            공유하며 부동산 시장에서 소비자와 판매자 양쪽에게 도움이 되는
+            플랫폼을 구축하는 것입니다.이 플랫폼을 통해 사용자들은 믿을 수 있는
+            정보와 솔직한 의견을 공유하며, 적합한 집을 찾는 데 도움을 받을 수
+            있게 만들었습니다.
           </div>
         </div>
 
@@ -96,35 +100,40 @@ const Ezipdetail = () => {
         <div>
           <h2 className="h3Title">🔥 스킬 및 핵심 경험</h2>
 
-          <p>■ Redux-toolkit을 사용한 미니, 클론 프로젝트 개발👍</p>
+          <p>
+            ■ Redux Toolkit을 활용한 비동기 처리 (createAsyncThunk) 개발 경험👍
+          </p>
           <p className="contents1">
-            ◻ 전역 상태 관리 라이브러리로써 Redux를 사용할 환경을 구축하는
-            보일러플레이트(상용구) 작성 등의 과정이 생략이 가능하기에 사용
+            ◻ Redux Toolkit의 createAsyncThunk을 활용하여 비동기 작업을
+            효율적으로 처리함
+            <br />◻ Redux Toolkit을 활용한 상태 관리는 애플리케이션의 복잡성을
+            다루는데 큰 도움이 됨
           </p>
 
-          <p>■ React-Query 를 이용한 프로젝트 개발 👍</p>
+          <p>■ React-Query를 활용한 프로젝트 경험 👍</p>
 
           <p className="contents1">
-            ◻ 서버 사이드의 상태를 보다 용이하게 관리하기 위해 사용
-            <br />◻ 캐싱 된 데이터를 사용해 데이터 업데이트를 빠르게 보여줄 수
-            있으며 서버에 부담도 줄일 수 있다는 장점
+            ◻ 서버 사이드 상태를 효과적으로 관리하고, 데이터를 캐싱하여 빠른
+            업데이트 가능
+            <br />◻ React-Query를 활용하면 캐싱된 데이터를 활용하여 업데이트의
+            빠른 반영과 서버 부하 감소를 이룰 수 있음
           </p>
 
-          <p>■ React-Query의 장점 infiniteQuery 사용 👍</p>
+          <p>■ React-Query의 강력한 기능, infiniteQuery 활용 👍</p>
 
           <p className="contents1">
-            ◻ 일정한 데이터를 순차적으로 보여주기 위함
-            <br />◻ 데이터의 일부만 먼저 렌더링하고 차례로 보여줌으로써 최적화와
-            유저의 로딩 시간을 개선
+            ◻ infiniteQuery를 활용하여 연속된 데이터를 순차적으로 표시
+            <br />◻ 일부 데이터를 먼저 렌더링하고 사용자 경험을 최적화하여 로딩
+            시간 단축
           </p>
 
-          <p>■ 고객 피드백을 반영한 UX 개선 👍</p>
+          <p>■ 고객 피드백을 반영한 UX 개선 경험 👍</p>
 
           <p className="contents1">
-            ◻ Private Routes를 활용해 로그인이 필요한 페이지에서 강제진입 또는
-            뒤로가는 현상에서 특정 액션을 취할 수 있게 해결
-            <br />◻ useLocation을 활용해 하단스크롤 화면에서 페이지 이동 시 상단
-            스크롤로 이동 해결
+            ◻ 로그인이 필요한 페이지에서 사용자를 강제로 이동시키는 문제를
+            Private Routes와 같은 방법을 활용하여 해결
+            <br />◻ 하단 스크롤 화면에서 페이지 전환 시 상단 스크롤 위치 유지를
+            위해 useLocation을 활용하여 해결
           </p>
         </div>
 
@@ -151,19 +160,18 @@ const Ezipdetail = () => {
             </div>
           </Ezipcss.StWork>
 
-           <Ezipcss.StWork>
+          <Ezipcss.StWork>
             <Ezipcss.StVideoBox>
               <ReactPlayer
                 url="video/mypage.mp4"
-                 width= "400px"
-                 height= "280px"
+                width="400px"
+                height="280px"
                 className="video"
                 muted={true}
                 playing={true}
                 loop={true}
-             />
-             </Ezipcss.StVideoBox>
-
+              />
+            </Ezipcss.StVideoBox>
 
             <div className="loginContent">
               <h3>◎ 마이페이지 </h3>
@@ -176,16 +184,16 @@ const Ezipdetail = () => {
           </Ezipcss.StWork>
 
           <Ezipcss.StWork>
-          <Ezipcss.StVideoBox>
-            <ReactPlayer
-              url="video/review.mp4"
-              className="video"
-              width= "400px"
-                 height= "280px"
-              muted={true} //chrome정책으로 인해 자동 재생을 위해 mute 옵션을 true로 해주었다.
-              playing={true}
-              loop={true}
-            />
+            <Ezipcss.StVideoBox>
+              <ReactPlayer
+                url="video/review.mp4"
+                className="video"
+                width="400px"
+                height="280px"
+                muted={true} //chrome정책으로 인해 자동 재생을 위해 mute 옵션을 true로 해주었다.
+                playing={true}
+                loop={true}
+              />
             </Ezipcss.StVideoBox>
             <div className="loginContent">
               <h3>◎ 리뷰 페이지 </h3>
@@ -205,8 +213,8 @@ const Ezipdetail = () => {
           </Ezipcss.StWork>
 
           <Ezipcss.StWork>
-          <div className="titleLogoBox">
-            <div className="community" />
+            <div className="titleLogoBox">
+              <div className="community" />
             </div>
             <div className="loginContent">
               <h3>◎ 커뮤니티 페이지 </h3>
@@ -219,7 +227,7 @@ const Ezipdetail = () => {
                 있다.
               </p>
             </div>
-          </Ezipcss.StWork> 
+          </Ezipcss.StWork>
         </div>
 
         {/* ===============================트러블 슈팅 ========================= */}
@@ -318,16 +326,15 @@ const Ezipdetail = () => {
           <div>
             <h2 className="h3Title">😰 아쉬운 점 </h2>
             <div className="ezipContent">
-              아쉬운 점 모바일 뷰를 못해봤다
-              typesciprt적용을 못했다. 이런 부분에서 아쉽게 프로젝트가 아닌
-              팀플레이에서 많이 아쉬움을 표현했다 . 팀원으로 협업을 통해
-              움직여야 햇지만 백 서버와의 소통 문제도 있었고 프론트 팀원끼리의
-              불화도 있었습니다. 그래서 더욱 완성도 높은 프로젝트가 되진
-              못했습니다. 이 점이 매우 아쉬웠습니다. 또한 typescipt적용을
-              못한점과 반응형 웹을 만들지 못했던 부분이 너무 아쉬웠다 하지만 !
-              이번 프로젝트에서는 완성 못했지만 혼자서 하는 나만의
-              프로젝트에서만이라도 꼭 타입스크립트와 반응형 웹을 만들어볼
-              생각이다 !! 아자아자 할 수 잇다 !
+              아쉬운 점 모바일 뷰를 못해봤다 typesciprt적용을 못했다. 이런
+              부분에서 아쉽게 프로젝트가 아닌 팀플레이에서 많이 아쉬움을
+              표현했다 . 팀원으로 협업을 통해 움직여야 햇지만 백 서버와의 소통
+              문제도 있었고 프론트 팀원끼리의 불화도 있었습니다. 그래서 더욱
+              완성도 높은 프로젝트가 되진 못했습니다. 이 점이 매우 아쉬웠습니다.
+              또한 typescipt적용을 못한점과 반응형 웹을 만들지 못했던 부분이
+              너무 아쉬웠다 하지만 ! 이번 프로젝트에서는 완성 못했지만 혼자서
+              하는 나만의 프로젝트에서만이라도 꼭 타입스크립트와 반응형 웹을
+              만들어볼 생각이다 !! 아자아자 할 수 잇다 !
             </div>
           </div>
         </div>

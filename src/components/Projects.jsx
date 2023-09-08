@@ -1,7 +1,10 @@
 import styled from "styled-components";
-import Ezip from "./projects/Ezip";
-import Slack from "./projects/Slack";
+
 import Scrolls from "../hooks/Scrolls";
+
+import Ezip from "./projects/Ezip";
+import Ueat from "./projects/Ueat";
+import Ai from "./projects/Ai";
 
 const Projects = () => {
   const scrollPosition = 2800;
@@ -13,16 +16,18 @@ const Projects = () => {
         <StTitle>projects</StTitle>
 
         <StProject>
-          <div className="ProjectBox">
-            <Ezip />
-
-            <Slack />
+          <div className="row">
+            <CenteredComponent>
+              <Ezip />
+            </CenteredComponent>
+            <CenteredComponent>
+              <Ueat />
+            </CenteredComponent>
           </div>
-
-          <div className="ProjectBox">
-            <Ezip />
-
-            <Slack />
+          <div className="row">
+            <CenteredComponent>
+              <Ai />
+            </CenteredComponent>
           </div>
         </StProject>
       </div>
@@ -40,17 +45,27 @@ const StTitle = styled.div`
 `;
 
 const StProject = styled.div`
-  @media screen and (min-width: 1450px) {
+  .row {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20px; /* Adjust as needed for spacing between rows */
+  }
+
+  @media screen and (min-width: 1450px) {
     width: 60%;
     margin: 0 auto;
   }
 
   @media screen and (max-width: 1449px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .row {
+      flex-direction: column;
+    }
   }
+`;
+
+const CenteredComponent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
