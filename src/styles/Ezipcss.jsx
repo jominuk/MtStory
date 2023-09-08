@@ -84,7 +84,7 @@ export const Ezipcss = {
     }
 
     @media screen and (min-width: 1000px) and (max-width: 1499px) {
-      width: 80%;
+      width: 70%;
     }
 
     @media screen and (min-width: 700px) and (max-width: 999px) {
@@ -112,11 +112,23 @@ export const Ezipcss = {
       }
     }
   `,
+  
+  VideoBox: styled.div`
+  width: 400px;
+  height: 280px;
+
+  .Video {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  `
+
+  ,
 
   StWork: styled.div`
     @media screen and (min-width: 1000px) {
       display: flex;
-      justify-content: space-around;
+      width:850px;
       margin-bottom: 30px;
 
       .kakaoLogin {
@@ -130,8 +142,9 @@ export const Ezipcss = {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 400px;
-        height: 280px;
+       
+        height: 270px;
+        padding: 0 0 0 30px;
       }
 
       .community {
@@ -143,13 +156,45 @@ export const Ezipcss = {
       }
     }
 
-    @media screen and (max-width: 999px) {
-      width: 60%;
-      margin: 50px auto;
+    @media screen and (min-width: 500px) and (max-width: 999px) {
 
       .kakaoLogin {
         width: 400px;
         height: 280px;
+        background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcgxXaI%2Fbtsth7dsyck%2FK4GznTGVMH0rTDRYzB1ZVk%2Fimg.png")
+          no-repeat center center;
+        background-size: cover;
+      }
+      .loginContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 280px;
+      }
+
+      .community {
+        width: 400px;
+        height: 280px;
+        background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbagMzR%2FbtstkqqxCjF%2FWKuUCuv7QRdzJIytAkOhU1%2Fimg.png")
+          no-repeat center center;
+        background-size: cover;
+      }
+   
+    }
+
+    @media screen and (max-width: 599px) {
+      width: 60%;
+      margin-top: 50px;
+
+.titleLogoBox {
+  width: 400px;
+  height: 280px;
+  margin:0 auto;
+}
+      .kakaoLogin {
+        width: 100%;
+        height: 100%;
         background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcgxXaI%2Fbtsth7dsyck%2FK4GznTGVMH0rTDRYzB1ZVk%2Fimg.png")
           no-repeat center center;
         background-size: cover;
@@ -163,8 +208,8 @@ export const Ezipcss = {
       }
 
       .community {
-        width: 400px;
-        height: 280px;
+        width: 100%;
+        height: 100%;
         background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbagMzR%2FbtstkqqxCjF%2FWKuUCuv7QRdzJIytAkOhU1%2Fimg.png")
           no-repeat center center;
         background-size: cover;

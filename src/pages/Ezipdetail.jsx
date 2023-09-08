@@ -134,7 +134,9 @@ const Ezipdetail = () => {
           <h2 className="h3Title">😎 맡은 주요 업무 </h2>
 
           <Ezipcss.StWork>
-            <div className="kakaoLogin" />
+            <div className="titleLogoBox">
+              <div className="kakaoLogin" />
+            </div>
             <div className="loginContent">
               <h3>◎ 로그인 페이지</h3>
               <p>
@@ -150,14 +152,16 @@ const Ezipdetail = () => {
           </Ezipcss.StWork>
 
           <Ezipcss.StWork>
-            <ReactPlayer
-              url="video/mypage.mp4"
-              width="400px"
-              height="280px"
-              muted={true}
-              playing={true}
-              loop={true}
-            />
+            <Ezipcss.VideoBox>
+              <ReactPlayer
+                url="video/mypage.mp4"
+                className="Video"
+                muted={true}
+                playing={true}
+                loop={true}
+             />
+            </Ezipcss.VideoBox>
+
             <div className="loginContent">
               <h3>◎ 마이페이지 </h3>
               <p>
@@ -169,14 +173,15 @@ const Ezipdetail = () => {
           </Ezipcss.StWork>
 
           <Ezipcss.StWork>
+          <Ezipcss.VideoBox>
             <ReactPlayer
               url="video/review.mp4"
-              width="400px"
-              height="280px"
+              className="Video"
               muted={true} //chrome정책으로 인해 자동 재생을 위해 mute 옵션을 true로 해주었다.
               playing={true}
               loop={true}
             />
+            </Ezipcss.VideoBox>
             <div className="loginContent">
               <h3>◎ 리뷰 페이지 </h3>
               <p>
@@ -195,7 +200,9 @@ const Ezipdetail = () => {
           </Ezipcss.StWork>
 
           <Ezipcss.StWork>
+          <div className="titleLogoBox">
             <div className="community" />
+            </div>
             <div className="loginContent">
               <h3>◎ 커뮤니티 페이지 </h3>
               <p>
@@ -306,7 +313,7 @@ const Ezipdetail = () => {
           <div>
             <h2 className="h3Title">😰 아쉬운 점 </h2>
             <div className="ezipContent">
-              (이건 제일 마지막에 작성하기)아쉬운 점 모바일 뷰를 못해봤다
+              아쉬운 점 모바일 뷰를 못해봤다
               typesciprt적용을 못했다. 이런 부분에서 아쉽게 프로젝트가 아닌
               팀플레이에서 많이 아쉬움을 표현했다 . 팀원으로 협업을 통해
               움직여야 햇지만 백 서버와의 소통 문제도 있었고 프론트 팀원끼리의
