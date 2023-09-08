@@ -211,7 +211,7 @@ const StContainer = styled.div`
       .sns {
         display: flex;
         justify-content: space-around;
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         padding: 0 0 30px 0;
       }
@@ -223,7 +223,6 @@ const StContainer = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-
       height: 300px;
       margin: 0 auto;
       border-radius: 20px;

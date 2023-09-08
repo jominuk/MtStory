@@ -195,8 +195,8 @@ export const Ezipcss = {
       margin-top: 50px;
 
 .titleLogoBox {
-  width: 280px;
-  height: 150px;
+  width: 320px;
+  height:220px;
   margin:0 auto;
 }
       .kakaoLogin {
