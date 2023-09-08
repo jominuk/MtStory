@@ -107,7 +107,7 @@ const StContainer = styled.div`
     }
 
     .content {
-      width: 50%;
+      width: 60%;
 
       .proflie-imfor {
         height: 400px;
