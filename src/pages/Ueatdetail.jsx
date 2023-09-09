@@ -46,10 +46,12 @@ const Ueatdetail = () => {
         <div>
           <h2 className="h3Title">📌 프로젝트 소개 </h2>
           <div className="ezipContent">
-            "UEAT(유잇)" 프로젝트는 항상 다수의 사람들과 함께 식사를 즐기거나,
-            혼자라도 특별한 맛을 느끼고자 할 때 발생하는 결정 과정의 어려움을
-            해결하기 위해 탄생한 플랫폼 입니다. 이러한 상황에서 자주 발생하는
-            결정 오류를 최소화하고자 만들게 되었습니다. UEAT은 사용자들이 먹고
+            <label className="pointColor">"UEAT(유잇)"</label> 프로젝트는 항상
+            다수의 사람들과 함께 식사를 즐기거나, 혼자라도 특별한 맛을 느끼고자
+            할 때 발생하는 결정 과정의 어려움을 해결하기 위해 탄생한 플랫폼
+            입니다. 이러한 상황에서 자주 발생하는 결정 오류를 최소화하고자
+            만들게 되었습니다.{" "}
+            <label className="pointColor">"UEAT(유잇)"</label>은 사용자들이 먹고
             싶은 음식을 쉽게 찾을 수 있도록 다양한 종류의 음식을 확인 할 수
             있으며, 다른 사용자들의 음식 경험과 내가 먹은 음식 경험을 추천하여
             공유하며 더 나은 식사 결정을 돕는 플랫폼으로, 맛있는 음식을 찾고
@@ -91,7 +93,10 @@ const Ueatdetail = () => {
         <div>
           <h2 className="h3Title">🔥 스킬 및 핵심 경험</h2>
 
-          <p>■ Redux-toolkit을 사용한 프로젝트 개발👍</p>
+          <p>
+            ■ <label className="pointColor">Redux-toolkit</label>을 사용한
+            프로젝트 개발👍
+          </p>
           <p className="contents1">
             ◻ Redux Toolkit을 이용하여 전역 상태 관리를 구축하고, 클론
             프로젝트를 개발함
@@ -99,7 +104,9 @@ const Ueatdetail = () => {
             보일러플레이트 작성 등의 번거로운 과정을 간소화함
           </p>
 
-          <p>■ 협업의 중요성 및 경험👍</p>
+          <p>
+            ■ <label className="pointColor">협업</label>의 중요성 및 경험👍
+          </p>
 
           <p className="contents1">
             ◻ 소통을 통해 다양한 자원과 지식을 공유하며 혁신적이고 창의적인
@@ -171,18 +178,21 @@ const Ueatdetail = () => {
 
             <div>2. 해결 과정</div>
             <p>
-              a. Base64 인코딩: 이미지나 파일과 같은 바이너리 데이터를 텍스트로
-              변환하는 기술
+              a. <label className="pointColor1">Base64 인코딩</label>: 이미지나
+              파일과 같은 바이너리 데이터를 텍스트로 변환하는 기술
             </p>
             <p className="trouble">
-              b. formData 객체: 키-값 쌍의 집합으로 HTTP 요청의 일부로 양식
-              데이터를 쉽게 구성하고 서버에 전송할 수 있는 JavaScript 객체
+              b. <label className="pointColor1">formData 객체</label>: 키-값
+              쌍의 집합으로 HTTP 요청의 일부로 양식 데이터를 쉽게 구성하고
+              서버에 전송할 수 있는 JavaScript 객체
             </p>
 
             <div>3. 해결</div>
             <p>
-              a. 이미지와 같은 바이너리 데이터는 Base64로 변환하여 전송하기
-              어려운 경우, formData를 활용하여 쉽게 처리
+              a. 이미지와 같은 바이너리 데이터는{" "}
+              <label className="pointColor1">Base64</label>로 변환하여 전송하기
+              어려운 경우, <label className="pointColor1">formData</label>를
+              활용하여 쉽게 처리
             </p>
           </div>
         </div>

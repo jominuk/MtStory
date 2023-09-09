@@ -11,6 +11,15 @@ export const Slackcss = {
       height: 130px;
       border-bottom: 1px solid #ccc;
     }
+    .pointColor {
+      font-size: 18px;
+      font-weight: 1000;
+    }
+    .pointColor1 {
+      font-size: 18px;
+      font-weight: 1000;
+      color: #0000ff84;
+    }
 
     .imgBox {
       width: 70px;

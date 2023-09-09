@@ -32,14 +32,18 @@ const Slackdetail = () => {
         <div>
           <h2 className="h3Title">📌 프로젝트 소개 </h2>
           <div className="ezipContent">
-            클론 프로젝트를 통해 TypeScript를 적용하면서 기술적으로 한 단계 더
-            발전할 수 있는 기회를 얻었습니다. 이러한 경험을 통해 코드의 오류를
-            초기 단계부터 방지하고 유지보수 가능한 코드를 작성하는 데 큰 이점을
-            봤습니다. 그러나 TypeScript를 사용하면서 작업 시간이 더 많이
-            소요된다는 점을 인지하게 되었습니다. 각각의 타입을 명시해야 하므로
-            코드가 길어지면서 가독성이 일부 감소하는 경향을 느꼈습니다. 이러한
-            과정을 통해 TypeScript를 활용하는 방법을 더 깊이 이해하고, 타입
-            시스템을 더욱 효과적으로 활용하는 방법을 배웠습니다.
+            클론 프로젝트를 통해{" "}
+            <label className="pointColor">TypeScript</label>를 적용하면서
+            기술적으로 한 단계 더 발전할 수 있는 기회를 얻었습니다. 이러한
+            경험을 통해 코드의 오류를 초기 단계부터 방지하고 유지보수 가능한
+            코드를 작성하는 데 큰 이점을 봤습니다. 그러나{" "}
+            <label className="pointColor">TypeScript</label>를 사용하면서 작업
+            시간이 더 많이 소요된다는 점을 인지하게 되었습니다. 각각의 타입을
+            명시해야 하므로 코드가 길어지면서 가독성이 일부 감소하는 경향을
+            느꼈습니다. 이러한 과정을 통해{" "}
+            <label className="pointColor">TypeScript</label>를 활용하는 방법을
+            더 깊이 이해하고, 타입 시스템을 더욱 효과적으로 활용하는 방법을
+            배웠습니다.
           </div>
         </div>
 
@@ -81,7 +85,10 @@ const Slackdetail = () => {
         <div>
           <h2 className="h3Title">🔥 스킬 및 핵심 경험</h2>
 
-          <p>■ TypeScript를 활용한 클론 프로젝트 개발 👍</p>
+          <p>
+            ■ <label className="pointColor">TypeScript</label>를 활용한 클론
+            프로젝트 개발 👍
+          </p>
           <p className="contents1">
             ◻ 코드 작성 중 발생할 수 있는 오류를 사전에 방지하여 개발 생산성
             향상
@@ -90,7 +97,10 @@ const Slackdetail = () => {
             <br />◻ 정적 타입 체크를 통해 코드 작성 중 발생할 수 있는 오류 예방
           </p>
 
-          <p>■ SWR을 활용한 클론 프로젝트 개발 👍</p>
+          <p>
+            ■ <label className="pointColor">SWR</label>을 활용한 클론 프로젝트
+            개발 👍
+          </p>
           <p className="contents1">
             ◻ SWR은 React Query와 유사하며, 간편하고 직관적인 API로 데이터를
             가져와 캐싱하고 업데이트를 감지하는 작업이 용이
@@ -98,7 +108,10 @@ const Slackdetail = () => {
             로드하여 페이지 로딩 시간 단축
           </p>
 
-          <p>■ Socket.io를 이용한 실시간 채팅 기능 개발 👍</p>
+          <p>
+            ■ <label className="pointColor">Socket.io</label>를 이용한 실시간
+            채팅 기능 개발 👍
+          </p>
           <p className="contents1">
             ◻ 클라이언트와 서버 간 양방향 실시간 통신으로 실시간 대화 경험 제공
             <br />◻ 간편하고 사용하기 쉬운 API로 실시간 통신 설정 가능
@@ -147,22 +160,24 @@ const Slackdetail = () => {
 
             <div>2. 해결 과정</div>
             <p>
-              a. 'revalidate': SWR을 사용하여 서버에 요청을 보내 데이터를 다시
-              가져오는 방법
+              a. <label className="pointColor1">revalidate</label>: SWR을
+              사용하여 서버에 요청을 보내 데이터를 다시 가져오는 방법
             </p>
             <p className="trouble">
-              b. 'mutate': 서버에 요청을 보내지 않고 SWR 캐시 데이터를 직접
-              수정하는 방법
+              b. <label className="pointColor1">mutate</label>: 서버에 요청을
+              보내지 않고 SWR 캐시 데이터를 직접 수정하는 방법
             </p>
 
             <div>3. 해결</div>
             <p>
-              a. 'revalidate'의 활용: 이는 사용자 작업, 예를 들어 특정 버튼 클릭
-              또는 양식 제출과 같은 작업에 대한 응답을 처리할 때 사용
+              a. <label className="pointColor1">revalidate</label>의 활용: 이는
+              사용자 작업, 예를 들어 특정 버튼 클릭 또는 양식 제출과 같은 작업에
+              대한 응답을 처리할 때 사용
             </p>
             <p>
-              b. 'mutate'의 활용: 이는 Socket을 사용하여 특정 사용자의 정보를
-              빠르게 업데이트하고 캐시된 데이터로 즉시 반영할 때 사용
+              b. <label className="pointColor1">mutate</label>의 활용: 이는
+              Socket을 사용하여 특정 사용자의 정보를 빠르게 업데이트하고 캐시된
+              데이터로 즉시 반영할 때 사용
             </p>
           </div>
 
@@ -180,22 +195,29 @@ const Slackdetail = () => {
 
             <div>2. 해결 과정</div>
             <p className="trouble">
-              a. 기존 useSWR을 사용하면 데이터가 1차원 배열 형태로 반환되어
-              [&#123;id:1&#125;, &#123;id:2&#125;, &#123;id:3&#125;]와 같은
-              구조를 가지게 됩니다. 그러나 useSWRInfinite를 사용하면 데이터가
-              2차원 배열로 변경되어 문제가 발생
+              a. 기존 <label className="pointColor1">useSWR</label>을 사용하면
+              데이터가 1차원 배열 형태로 반환되어{" "}
+              <label className="pointColor1">
+                [&#123;id:1&#125;, &#123;id:2&#125;, &#123;id:3&#125;]
+              </label>
+              와 같은 구조를 가지게 됩니다. 그러나{" "}
+              <label className="pointColor1">useSWRInfinite</label>를 사용하면
+              데이터가 2차원 배열로 변경되어 문제가 발생
             </p>
 
             <div>3. 해결</div>
             <p>
               a. 1차원 배열에서 페이지별로 데이터를 받아올 수 있도록 로직을
               수정하여 2차원 배열 형태로 데이터를 받아오게 했습니다. 즉,
-              [&#123;id:1&#125;, &#123;id:2&#125;, &#123;id:3&#125;]와 같은
-              상태로 데이터를 수정했습니다.
+              <label className="pointColor1">
+                [&#123;id:1&#125;, &#123;id:2&#125;, &#123;id:3&#125;]
+              </label>
+              와 같은 상태로 데이터를 수정했습니다.
               <br />
               <br />
               b. 중첩 배열을 평탄화하기 위해 Spread 연산자인 '...data' 대신
-              'data.flat()'을 사용하여 데이터를 수정했습니다."
+              <label className="pointColor1">data.flat()</label>을 사용하여
+              데이터를 수정했습니다."
             </p>
           </div>
 

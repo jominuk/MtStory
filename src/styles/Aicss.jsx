@@ -11,6 +11,15 @@ export const Aicss = {
       height: 130px;
       border-bottom: 1px solid #ccc;
     }
+    .pointColor {
+      font-size: 18px;
+      font-weight: 1000;
+    }
+    .pointColor1 {
+      font-size: 18px;
+      font-weight: 1000;
+      color: #0000ff84;
+    }
 
     h1 {
       font-weight: 600;

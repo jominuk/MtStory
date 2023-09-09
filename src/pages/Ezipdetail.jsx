@@ -44,18 +44,19 @@ const Ezipdetail = () => {
         <div>
           <h2 className="h3Title">📌 프로젝트 소개 </h2>
           <div className="ezipContent">
-            프로젝트 '이집은(ezip)'은 직접 글을 게시하고, 솔직하고 정직한
-            이야기와 소소한 후기를 나눌 수 있는 플랫폼으로 설계되었습니다.
-            프로젝트 초기 회의 때, 부동산 관련 뉴스가 빈번하게 보도되었고, 저희
-            팀원들 중 많은 사람들이 부동산 시장에서 만족스러운 집을 찾지 못하며
-            헛걸음을 친 경험이 있었습니다. 이런 경험을 통해, 우리는 솔직한
-            후기를 공유하고 서로에게 도움을 주는 플랫폼의 필요성을 깨달았습니다.
-            또한, 다른 부동산 플랫폼에서는 보여진 이미지와 실제 방과 구조가
-            상이하여 실망한 경험이 흔했습니다. 따라서, 우리는 '이집은(ezip)'을
-            개발하게 되었습니다. 이 플랫폼은 부동산에 직접 매물을 올리지 않고도
-            직접 매물을 게시하고 후기를 작성한 후에 부동산과의 계약을 편리하게
-            체결할 수 있는 방법을 제공합니다. 우리의 목표는 진솔한 경험을
-            공유하며 부동산 시장에서 소비자와 판매자 양쪽에게 도움이 되는
+            프로젝트 <label className="pointColor">'이집은(ezip)'</label>은 직접
+            글을 게시하고, 솔직하고 정직한 이야기와 소소한 후기를 나눌 수 있는
+            플랫폼으로 설계되었습니다. 프로젝트 초기 회의 때, 부동산 관련 뉴스가
+            빈번하게 보도되었고, 저희 팀원들 중 많은 사람들이 부동산 시장에서
+            만족스러운 집을 찾지 못하며 헛걸음을 친 경험이 있었습니다. 이런
+            경험을 통해, 우리는 솔직한 후기를 공유하고 서로에게 도움을 주는
+            플랫폼의 필요성을 깨달았습니다. 또한, 다른 부동산 플랫폼에서는
+            보여진 이미지와 실제 방과 구조가 상이하여 실망한 경험이 흔했습니다.
+            따라서, 우리는 <label className="pointColor">'이집은(ezip)'</label>
+            을 개발하게 되었습니다. 이 플랫폼은 부동산에 직접 매물을 올리지
+            않고도 직접 매물을 게시하고 후기를 작성한 후에 부동산과의 계약을
+            편리하게 체결할 수 있는 방법을 제공합니다. 우리의 목표는 진솔한
+            경험을 공유하며 부동산 시장에서 소비자와 판매자 양쪽에게 도움이 되는
             플랫폼을 구축하는 것입니다.이 플랫폼을 통해 사용자들은 믿을 수 있는
             정보와 솔직한 의견을 공유하며, 적합한 집을 찾는 데 도움을 받을 수
             있게 만들었습니다.
@@ -101,7 +102,10 @@ const Ezipdetail = () => {
           <h2 className="h3Title">🔥 스킬 및 핵심 경험</h2>
 
           <p>
-            ■ Redux Toolkit을 활용한 비동기 처리 (createAsyncThunk) 개발 경험👍
+            ■ Redux Toolkit을 활용한{" "}
+            <label className="pointColor">비동기 처리(createAsyncThunk)</label>{" "}
+            {""}
+            개발 경험👍
           </p>
           <p className="contents1">
             ◻ Redux Toolkit의 createAsyncThunk을 활용하여 비동기 작업을
@@ -110,7 +114,10 @@ const Ezipdetail = () => {
             다루는데 큰 도움이 됨
           </p>
 
-          <p>■ React-Query를 활용한 프로젝트 경험 👍</p>
+          <p>
+            ■ <label className="pointColor">React-Query</label>를 활용한
+            프로젝트 경험 👍
+          </p>
 
           <p className="contents1">
             ◻ 서버 사이드 상태를 효과적으로 관리하고, 데이터를 캐싱하여 빠른
@@ -119,7 +126,10 @@ const Ezipdetail = () => {
             빠른 반영과 서버 부하 감소를 이룰 수 있음
           </p>
 
-          <p>■ React-Query의 강력한 기능, infiniteQuery 활용 👍</p>
+          <p>
+            ■ React-Query의 강력한 기능,{" "}
+            <label className="pointColor">infiniteQuery</label> 활용 👍
+          </p>
 
           <p className="contents1">
             ◻ infiniteQuery를 활용하여 연속된 데이터를 순차적으로 표시
@@ -127,7 +137,10 @@ const Ezipdetail = () => {
             시간 단축
           </p>
 
-          <p>■ 고객 피드백을 반영한 UX 개선 경험 👍</p>
+          <p>
+            ■ 고객 피드백을 반영한 <label className="pointColor">UX 개선</label>{" "}
+            경험 👍
+          </p>
 
           <p className="contents1">
             ◻ 로그인이 필요한 페이지에서 사용자를 강제로 이동시키는 문제를
@@ -246,19 +259,23 @@ const Ezipdetail = () => {
 
             <div>2. 해결 과정</div>
             <p>
-              a. refetchQueries : React Query 캐시에 캐싱된 하나 이상의 쿼리에
-              대한 새로운 데이터를 가져오는데 사용
+              a. <label className="pointColor1">refetchQueries</label> : React
+              Query 캐시에 캐싱된 하나 이상의 쿼리에 대한 새로운 데이터를
+              가져오는데 사용
             </p>
             <p className="trouble">
-              b. invalidateQueries : 하나 이상의 쿼리를 steal 로 표시하는데 사용
-              즉, 캐시의 데이터가 더 이상 최신 상태가 아닌 것을 간주
+              b. <label className="pointColor1">invalidateQueries</label> : 하나
+              이상의 쿼리를 steal 로 표시하는데 사용 즉, 캐시의 데이터가 더 이상
+              최신 상태가 아닌 것을 간주
             </p>
 
             <div>3. 해결</div>
             <p>
-              a. refetchQueries를 사용하게 되면 너무 많은 랜더링을 유발할 수
-              있기에 프로젝트의 최적화를 떨어뜨려 적당하지 않다는 생각에
-              invalidateQueries를 사용하여 최신 업데이트를 반영
+              a. <label className="pointColor1">refetchQueries를</label>{" "}
+              사용하게 되면 너무 많은 랜더링을 유발할 수 있기에 프로젝트의
+              최적화를 떨어뜨려 적당하지 않다는 생각에
+              <label className="pointColor1">invalidateQueries를</label>{" "}
+              사용하여 최신 업데이트를 반영
             </p>
           </div>
 
@@ -271,12 +288,16 @@ const Ezipdetail = () => {
             </p>
 
             <div>2. 해결 과정</div>
-            <p>a. Pagination</p>
+            <p>
+              a. <label className="pointColor1">Pagination</label>
+            </p>
             <div className="contents1">
               <p>!. 장점 : 유저 의도에 맞게 페이지 이동 가능</p>
               <p>!!. 단점 : 유저가 버튼 클릭의 추가적인 작업(액션)이 필요</p>
             </div>
-            <p>b. Infinite Scroll</p>
+            <p>
+              b. <label className="pointColor1">Infinite Scroll</label>
+            </p>
             <div className="contents1">
               <p>
                 !. 장점 : 스크롤 하나로 많은 양의 데이터를 자연스럽게
@@ -289,12 +310,13 @@ const Ezipdetail = () => {
 
             <div>3. 해결</div>
             <p>
-              a. InfiniteScroll을 사용해 유저에게 자연스러운 데이터를 만날 수
-              있게 구현
+              a. <label className="pointColor1">InfiniteScroll을</label> 사용해
+              유저에게 자연스러운 데이터를 만날 수 있게 구현
             </p>
             <p>
-              b. intersection observer API를 사용해 변화를 관찰하고 스크롤 시
-              지정된 데이터를 요청해 렌더링
+              b.{" "}
+              <label className="pointColor1">intersection observer API를</label>{" "}
+              사용해 변화를 관찰하고 스크롤 시 지정된 데이터를 요청해 렌더링
             </p>
           </div>
 
@@ -310,14 +332,18 @@ const Ezipdetail = () => {
             <div>2. 해결</div>
             <div className="memorize2" />
             <p>
-              a. 불필요한 리랜더링에는 React.memo를 사용하고, 재 사용되고 있는
-              함수들에게는 useCallback과 useMemo를 사용
+              a. 불필요한 리랜더링에는{" "}
+              <label className="pointColor1">React.memo</label>를 사용하고, 재
+              사용되고 있는 함수들에게는{" "}
+              <label className="pointColor1">useCallback</label>과{" "}
+              <label className="pointColor1">useMemo</label>를 사용
             </p>
             <p>b. 재사용이 가능한 기능들은 컴포넌트화 하여 정리</p>
             <p>
               c. 검색기능의 text를 입력할 때 state 값이 바뀌며, 리랜더링을
-              유발하는데 이 때 debounce함수가 재 생성 됨, 결론 useCallback로
-              함수의 재 생성을 막음
+              유발하는데 이 때 debounce함수가 재 생성 됨, 결론{" "}
+              <label className="pointColor1">useCallback</label>로 함수의 재
+              생성을 막음
             </p>
           </div>
 

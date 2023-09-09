@@ -37,7 +37,8 @@ const Aidetail = () => {
           <h2 className="h3Title">📌 프로젝트 소개 </h2>
           <div className="ezipContent">
             프로젝트 제작 중 어려운 과제를 해결하기 위해 혁신적인 방향으로
-            나아가는 데 도움을 주는 GPT 기반의 챗봇 서비스인 'Ai Chatbot'은 개발
+            나아가는 데 도움을 주는 GPT 기반의 챗봇 서비스인{" "}
+            <label className="pointColor">'Ai Chat Bot'</label>은 개발
             프로젝트를 진행하며 영감을 얻은 결과물입니다. 이 플랫폼은 친근하고
             가볍게 사용 가능하며, 모바일 환경에서도 간편한 채팅 솔루션을
             제공합니다.
@@ -79,16 +80,22 @@ const Aidetail = () => {
           <h2 className="h3Title">🔥 스킬 및 핵심 경험</h2>
 
           <p>
-            ■ 다크모드 활용으로 사용자의 경험을 개선시키며 CSS, JavaScript,
-            미디어 쿼리 등 스킬을 향상 👍
+            ■ <label className="pointColor">다크모드</label> 활용으로 사용자의
+            경험을 개선시키며 CSS, JavaScript, 미디어 쿼리 등 스킬을 향상 👍
           </p>
           <p>
             ■ OpenAI API를 적극 활용하여 인공 지능과의 대화 기능을 통합한
             애플리케이션 개발 👍
           </p>
           <p>■ Chat-GPT와 유사한 채팅 환경 구축 👍</p>
-          <p>■ 전역 상태 관리에 대한 이해와 useContext 활용 👍</p>
-          <p>■ TypeScript를 도입하여 애플리케이션의 견고성과 성능 향상 👍</p>
+          <p>
+            ■ 전역 상태 관리에 대한 이해와{" "}
+            <label className="pointColor">useContext</label> 활용 👍
+          </p>
+          <p>
+            ■ <label className="pointColor">TypeScript</label>를 도입하여
+            애플리케이션의 견고성과 성능 향상 👍
+          </p>
         </div>
 
         {/* ===============================맡은 주요 업무  ========================= */}
@@ -138,9 +145,11 @@ const Aidetail = () => {
               같은 3항 연산을 활용하여 채팅 UI를 동적으로 생성
             </p>
             <p>
-              {
-                'justify-content: ${({ sender }) => sender === "me" ? "flex-end" : "flex-start"};'
-              }
+              <label className="pointColor1">
+                {
+                  'justify-content: ${({ sender }) => sender === "me" ? "flex-end" : "flex-start"};'
+                }
+              </label>
             </p>
           </div>
 
@@ -163,12 +172,12 @@ const Aidetail = () => {
             </p>
             <div className="contents1">
               <p>
-                i. 'redux-toolkit': 큰 상태 트리와 복잡한 애플리케이션에 적합한
-                경우
+                i. <label className="pointColor1">redux-toolkit</label>: 큰 상태
+                트리와 복잡한 애플리케이션에 적합한 경우
               </p>
               <p>
-                ii. 'context API': 더 간단하고 작은 규모의 애플리케이션 또는
-                구성 요소가 제한된 경우
+                ii. <label className="pointColor1">context API</label>: 더
+                간단하고 작은 규모의 애플리케이션 또는 구성 요소가 제한된 경우
               </p>
             </div>
             <p className="trouble">
