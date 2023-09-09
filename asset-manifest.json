@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MyStory/static/css/main.3391e6a7.css",
+    "main.js": "/MyStory/static/js/main.1c61f4a3.js",
+    "static/media/mainUeat.png": "/MyStory/static/media/mainUeat.83db82ff90cb1db86c12.png",
+    "static/media/slackJoin.png": "/MyStory/static/media/slackJoin.d448da95f1946d5e98ac.png",
+    "static/media/ezip.jpg": "/MyStory/static/media/ezip.e133a146360def7a3b58.jpg",
+    "static/media/slackChat.png": "/MyStory/static/media/slackChat.eea7bb916b2f64fc9582.png",
+    "static/media/slackMain.png": "/MyStory/static/media/slackMain.db6827a679beff72c241.png",
+    "static/media/light.png": "/MyStory/static/media/light.466ef95fe261e83495ae.png",
+    "static/media/ueatpost.png": "/MyStory/static/media/ueatpost.467eb0b390401372e62e.png",
+    "static/media/minuk.png": "/MyStory/static/media/minuk.4db1459822b289fda071.png",
+    "static/media/dark.png": "/MyStory/static/media/dark.4455f798d65d4776b562.png",
+    "index.html": "/MyStory/index.html",
+    "main.3391e6a7.css.map": "/MyStory/static/css/main.3391e6a7.css.map",
+    "main.1c61f4a3.js.map": "/MyStory/static/js/main.1c61f4a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3391e6a7.css",
+    "static/js/main.1c61f4a3.js"
+  ]
+}
