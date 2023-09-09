@@ -5,7 +5,10 @@ const SWR = ({ onCloseModal }) => {
     <ModalBackdrop>
       <StContainer>
         <h2>SWR</h2>
-        <p>실시간 업데이트 및 라이브 데이터</p>
+        <p>
+          데이터를 가져오고 관리하기 위한 데이터 훅을 사용할 수 있으며, 동일한
+          데이터를 반복잡업하지 않고 캐싱을 통해 재사용 할 수 있습니다.
+        </p>
         <StCloseBut onClick={onCloseModal}>확인</StCloseBut>
       </StContainer>
     </ModalBackdrop>

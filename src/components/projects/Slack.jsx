@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-const Ueat = () => {
+const Slack = () => {
   const navigate = useNavigate();
 
   const [isFlipped, setIsFlipped] = useState(false);
@@ -17,7 +17,7 @@ const Ueat = () => {
         <CardInner flipped={isFlipped ? "true" : "false"}>
           <CardFront>
             <img
-              src={require("../../images/ChatAi.png")}
+              src={require("../../images/slackMain.png")}
               alt="eziplogo"
               className="ezipMain"
             />
@@ -28,41 +28,44 @@ const Ueat = () => {
           <CardBack>
             <div className="projectContainer">
               <div className="titleBox">
-                <p>Ai : 인공지능 Chat</p>
+                <img
+                  src={require("../../images/slackLogo.png")}
+                  alt="ezipLogo"
+                  className="logo"
+                />
+                <p>Slack(Clone-Project)</p>
               </div>
 
               <div className="pTe">
-                <p>✌️ 편리하게 사용할 수 있는 인공지능 Chat 플랫폼</p>
+                <p>
+                  ✌️Typescript 습득을 위한 기회가 클론 코딩을 통해 주어지게
+                  되었습니다..
+                </p>
               </div>
 
               <div className="smallTitle">Tech.</div>
               <div className="smallContents">
-                JS, React, Typescript <br /> Styled-component
+                JS, React, Typescript, SWR, Socket.io
               </div>
 
               <div className="detaBut">
                 <button
                   onClick={() => {
-                    navigate("/aidetail");
+                    navigate("/slackdetail");
                   }}
                 >
                   Detail
                 </button>
               </div>
 
-              <div className="btnGrp">
+              <div>
                 <button
                   onClick={() => {
-                    window.open("https://ai-chat-gamma-weld.vercel.app/");
+                    window.open(
+                      "https://github.com/jominuk/Clone_Project-Slack"
+                    );
                   }}
-                >
-                  Demo
-                </button>
-
-                <button
-                  onClick={() => {
-                    window.open("https://github.com/jominuk/Ai-Chat");
-                  }}
+                  className="btnGrp"
                 >
                   Source Code
                 </button>
@@ -75,7 +78,7 @@ const Ueat = () => {
   );
 };
 
-export default Ueat;
+export default Slack;
 
 const StEzipBox = styled.div`
   @media screen and (min-width: 1400px) {
@@ -149,6 +152,7 @@ const CardFront = styled(CardSide)`
       align-items: center;
       width: 270px;
       height: 150px;
+
       border: 2px solid white;
       border-radius: 30px;
     }
@@ -177,6 +181,11 @@ const CardBack = styled(CardSide)`
     font-size: 20px;
     font-weight: 800;
   }
+  .logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+  }
   .pTe {
     font-size: 13px;
   }
@@ -200,19 +209,13 @@ const CardBack = styled(CardSide)`
       cursor: pointer;
     }
   }
-
   .btnGrp {
-    display: flex;
-    justify-content: space-around;
-
-    button {
-      width: 40%;
-      height: 20px;
-      border: none;
-      border-radius: 10px;
-      background: rgba(0, 161, 167, 0.3);
-      color: white;
-      cursor: pointer;
-    }
+    width: 40%;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 161, 167, 0.3);
+    color: white;
+    cursor: pointer;
   }
 `;

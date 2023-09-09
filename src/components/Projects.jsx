@@ -5,6 +5,7 @@ import Scrolls from "../hooks/Scrolls";
 import Ezip from "./projects/Ezip";
 import Ueat from "./projects/Ueat";
 import Ai from "./projects/Ai";
+import Slack from "./projects/Slack";
 
 const Projects = () => {
   const scrollPosition = 2800;
@@ -27,6 +28,9 @@ const Projects = () => {
           <div className="row">
             <CenteredComponent>
               <Ai />
+            </CenteredComponent>
+            <CenteredComponent>
+              <Slack />
             </CenteredComponent>
           </div>
         </StProject>
