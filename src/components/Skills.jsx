@@ -245,12 +245,16 @@ const StSkills = styled.div`
       .moreBtn {
         width: 80px;
         height: 35px;
-        border: none;
+        border: 3px solid rgb(132, 182, 165);
         border-radius: 10px;
+        transition: all 0.2s ease-in;
         cursor: pointer;
 
         &:hover {
-          background: red;
+          border: none;
+          scale: 1.3;
+          background: linear-gradient(-45deg, #33ccff 0%, #ff99cc 100%);
+          color: white;
         }
       }
     }
