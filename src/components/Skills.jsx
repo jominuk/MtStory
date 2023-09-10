@@ -300,6 +300,13 @@ const StSkills = styled.div`
       }
     }
 
+    .more {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 5px;
+    }
+
     .moreBtn {
       width: 80px;
       height: 35px;
