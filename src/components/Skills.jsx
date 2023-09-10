@@ -300,14 +300,19 @@ const StSkills = styled.div`
       }
     }
 
-    .more {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-left: 5px;
+    .moreBtn {
+      width: 80px;
+      height: 35px;
+      border: 3px solid rgb(132, 182, 165);
+      border-radius: 10px;
+      transition: all 0.2s ease-in;
+      cursor: pointer;
 
-      .moreBtn {
-        height: 35px;
+      &:hover {
+        border: none;
+        scale: 1.3;
+        background: linear-gradient(-45deg, #33ccff 0%, #ff99cc 100%);
+        color: white;
       }
     }
   }
