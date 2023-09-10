@@ -90,6 +90,20 @@ export const Ueatcss = {
       width: 80%;
     }
   `,
+
+  StVideoBox: styled.div`
+    @media screen and (max-width: 599px) {
+      width: 330px;
+      height: 210px;
+      margin: 0 auto;
+
+      .video {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  `,
+
   StWork: styled.div`
     @media screen and (min-width: 1000px) {
       display: flex;

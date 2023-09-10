@@ -78,7 +78,6 @@ export const Ezipcss = {
     .memorize1 {
       width: 350px;
       height: 260px;
-      margin: 20px 0 20px 30px;
       background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbtrtGH%2FbtstqZLNqST%2FxvrowmEsM3ccZgCL2VrTP0%2Fimg.png")
         no-repeat center center;
       background-size: cover;
@@ -86,7 +85,6 @@ export const Ezipcss = {
     .memorize2 {
       width: 400px;
       height: 260px;
-      margin: 20px 0 20px 30px;
       background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FU2ofg%2Fbtsth5fJilm%2FnWDnfoGqPUujp2jEXFgz2K%2Fimg.png")
         no-repeat center center;
       background-size: cover;
@@ -108,28 +106,31 @@ export const Ezipcss = {
       width: 80%;
 
       .memorize1 {
-        width: 250px;
-        height: 200px;
-        margin: 20px 0 20px 30px;
+        width: 230px;
+        height: 180px;
         background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbtrtGH%2FbtstqZLNqST%2FxvrowmEsM3ccZgCL2VrTP0%2Fimg.png")
           no-repeat center center;
         background-size: cover;
       }
       .memorize2 {
-        width: 280px;
+        width: 230px;
         height: 180px;
-        margin: 20px 0 20px 30px;
         background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FU2ofg%2Fbtsth5fJilm%2FnWDnfoGqPUujp2jEXFgz2K%2Fimg.png")
           no-repeat center center;
         background-size: cover;
+      }
+
+      .trouble {
+        height: 140px;
+        border-bottom: 2px dashed #ccc;
       }
     }
   `,
 
   StVideoBox: styled.div`
     @media screen and (max-width: 599px) {
-      width: 350px;
-      height: 230px;
+      width: 330px;
+      height: 210px;
       margin: 0 auto;
 
       .video {
@@ -156,7 +157,6 @@ export const Ezipcss = {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         height: 270px;
         padding: 0 0 0 30px;
       }

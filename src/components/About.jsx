@@ -177,7 +177,7 @@ const StContainer = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 80%;
+      width: 100%;
       height: 300px;
       margin: 0 auto;
       border-radius: 20px;
@@ -194,7 +194,7 @@ const StContainer = styled.div`
     }
 
     .content {
-      width: 80%;
+      width: 100%;
       margin: 50px auto;
       border-radius: 20px;
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);

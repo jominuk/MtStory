@@ -95,6 +95,10 @@ export const Slackcss = {
 
     @media screen and (max-width: 699px) {
       width: 80%;
+
+      .trouble {
+        height: 120px;
+      }
     }
   `,
 
@@ -121,21 +125,16 @@ export const Slackcss = {
       .kakaoLogin {
         width: 400px;
         height: 280px;
+        margin-top: 50px;
       }
     }
 
     @media screen and (max-width: 599px) {
-      width: 100%;
-      margin-top: 50px;
-
-      .titleLogoBox {
+      height: 550px;
+      .kakaoLogin {
         width: 320px;
         height: 220px;
-        margin: 0 auto;
-      }
-      .kakaoLogin {
-        width: 100%;
-        height: 100%;
+        margin-top: 50px;
       }
     }
   `,

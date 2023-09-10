@@ -26,15 +26,17 @@ const Ueatdetail = () => {
           >
             Github 바로가기
           </span>
-
-          <ReactPlayer
-            url="video/ueatlodin.mp4"
-            width="400px"
-            height="280px"
-            muted={true}
-            playing={true}
-            loop={true}
-          />
+          <Ueatcss.StVideoBox>
+            <ReactPlayer
+              url="video/ueatlodin.mp4"
+              width="400px"
+              height="280px"
+              className="video"
+              muted={true}
+              playing={true}
+              loop={true}
+            />
+          </Ueatcss.StVideoBox>
 
           <div className="Link2">
             * 현재 서버가 종료되어 영상으로 보여드립니다.
