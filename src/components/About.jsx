@@ -147,8 +147,8 @@ const StContainer = styled.div`
       width: 50%;
     }
     .proflie-img {
-      width: 250px;
-      height: 380px;
+      width: 200px;
+      height: 330px;
     }
 
     .content {
@@ -160,7 +160,7 @@ const StContainer = styled.div`
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        padding: 10px 0 10px 40px;
+        padding: 10px 0 10px 20px;
       }
 
       .sns {
@@ -184,7 +184,7 @@ const StContainer = styled.div`
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
     }
     .proflie-img {
-      width: 250px;
+      width: 200px;
       height: 250px;
     }
 

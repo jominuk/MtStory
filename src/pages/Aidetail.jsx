@@ -146,9 +146,8 @@ const Aidetail = () => {
             </p>
             <p>
               <label className="pointColor1">
-                {
-                  'justify-content: ${({ sender }) => sender === "me" ? "flex-end" : "flex-start"};'
-                }
+                {`justify-content: ${({ sender }) =>
+                  sender === "me" ? "flex-end" : "flex-start"};`}
               </label>
             </p>
           </div>
