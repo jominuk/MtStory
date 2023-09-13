@@ -56,7 +56,7 @@ const Skills = () => {
           </div>
 
           <div className="my-skill">
-            {[80, 80, 60, 30, 70, 60, 65, 50, 20].map((percentage, index) => (
+            {[70, 80, 60, 30, 70, 60, 65, 50, 20].map((percentage, index) => (
               <div key={index} className="backGraph">
                 {percentage}%
                 <div
@@ -219,7 +219,6 @@ const StSkills = styled.div`
 
       .graph {
         background: rgba(82, 215, 142, 0.6);
-        /* rgb(0 161 167); */
         height: 35px;
         position: absolute;
         top: 0;

@@ -360,13 +360,13 @@ const Ezipdetail = () => {
               했지만, 팀 내에서{" "}
               <label className="pointColor">React-Query</label>만 사용하기로
               결정했기 때문에 이 역시 아쉬움으로 남아있습니다. 특히, 프로젝트
-              완료 후 다른 회사들이
-              <label className="pointColor">TypeScript</label>를 널리 사용하고
-              있다는 사실을 알게 되어 더 아쉬웠습니다. 또한, 원활한
-              의사소통에서도 아쉬운점이 많았습니다. 백엔드와의 소통 문제와 팀 내
-              갈등으로 인해 프로젝트의 완성도를 높히지 못한 부분이 아쉬웠습니다.
-              그러나 이러한 아쉬움을 격려로 바꾸고, 혼자서라도 개인 프로젝트를
-              통해 <label className="pointColor">TypeScript</label>활용과{" "}
+              완료 후 현업에서 <label className="pointColor">TypeScript</label>
+              를 널리 사용하고 있다는 사실을 알게 되어 더 아쉬웠습니다. 또한,
+              원활한 의사소통에서도 아쉬운점이 많았습니다. 백엔드와의 소통
+              문제와 팀 내 갈등으로 인해 프로젝트의 완성도를 높히지 못한 부분이
+              아쉬웠습니다. 그러나 이러한 아쉬움을 격려로 바꾸고, 혼자서라도
+              개인 프로젝트를 통해{" "}
+              <label className="pointColor">TypeScript</label>활용과{" "}
               <label className="pointColor">반응형 웹</label> 개발에 도전하려고
               합니다.
             </div>
