@@ -46,7 +46,7 @@ const Ueatdetail = () => {
         {/* ===============================프로젝트 소개 ========================= */}
 
         <div>
-          <h2 className="h3Title">📌 프로젝트 소개 </h2>
+          <h2 className="h3Title">📌 프로젝트 기획 의도 및 소개 </h2>
           <div className="ezipContent">
             <label className="pointColor">"UEAT(유잇)"</label> 프로젝트는 항상
             다수의 사람들과 함께 식사를 즐기거나, 혼자라도 특별한 맛을 느끼고자

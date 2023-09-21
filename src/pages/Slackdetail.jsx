@@ -30,7 +30,7 @@ const Slackdetail = () => {
         {/* ===============================프로젝트 소개 ========================= */}
 
         <div>
-          <h2 className="h3Title">📌 프로젝트 소개 </h2>
+          <h2 className="h3Title">📌 프로젝트 기획 의도 및 소개 </h2>
           <div className="ezipContent">
             클론 프로젝트를 통해{" "}
             <label className="pointColor">TypeScript</label>를 적용하면서

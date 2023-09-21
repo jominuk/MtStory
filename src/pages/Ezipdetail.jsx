@@ -42,7 +42,7 @@ const Ezipdetail = () => {
         {/* ===============================프로젝트 소개 ========================= */}
 
         <div>
-          <h2 className="h3Title">📌 프로젝트 소개 </h2>
+          <h2 className="h3Title">📌 프로젝트 기획 의도 및 소개 </h2>
           <div className="ezipContent">
             프로젝트 <label className="pointColor">'이집은(ezip)'</label>은 직접
             글을 게시하고, 솔직하고 정직한 이야기와 소소한 후기를 나눌 수 있는
