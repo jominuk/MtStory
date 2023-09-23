@@ -228,13 +228,9 @@ const Slackdetail = () => {
               a. 동일한 방에서 채팅 후 다른 방에서도 내가 작성한 채팅이 표시되는
               문제가 발생했습니다.
             </p>
-            <p>
+            <p className="trouble">
               b. 올바른 채팅 메시지를 입력하고 있지만 서버로 데이터를 전송하지
               못하는 문제가 있었습니다.
-            </p>
-            <p className="trouble">
-              c. 연결 과정에서 네트워크 창에 'polling' 에러가 발생하는 문제가
-              있었습니다.
             </p>
 
             <div>2. 해결 과정</div>
@@ -242,13 +238,9 @@ const Slackdetail = () => {
               a. 방을 떠날 때 기존 방에 남아있던 데이터를 처리하기 위한 로직을
               구현하여 문제를 해결했습니다.
             </p>
-            <p>
+            <p className="trouble">
               b. 소켓.io 연결 중에 'sendBuffer'와 'receiveBuffer' 내부 배열이
               비어있어야 데이터를 전송할 수 있어서 이를 수정했습니다.
-            </p>
-            <p className="trouble">
-              c. 구 버전의 브라우저에서는 WebSocket이 지원되지 않을 수 있어,
-              처음에 HTTP 요청을 보내는 문제를 확인했습니다.
             </p>
 
             <div>3. 해결</div>
@@ -260,12 +252,6 @@ const Slackdetail = () => {
             <p>
               b. 백엔드 서버와 프론트엔드 서버 간의 소켓.io 버전을 동일하게
               맞춤으로써 문제를 해결했습니다.
-            </p>
-            <p>
-              c. 현재 사용 중인 크롬 버전에서는 WebSocket을 직접 사용할 수 있기
-              때문에 HTTP를 거치지 않고 WebSocket을 사용할 수 있도록
-              'transports: ['websocket']'를 사용하여 로직을 수정하여 문제를
-              해결했습니다."
             </p>
           </div>
         </div>
