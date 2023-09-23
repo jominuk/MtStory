@@ -61,6 +61,11 @@ const Aidetail = () => {
               className="LogoImage"
             />
             <img
+              src="https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=TypeScript&logoColor=white"
+              alt="TypeScript"
+              className="LogoImage"
+            />
+            <img
               src="https://img.shields.io/badge/Context-API-764ABC?style=plastic&logo=Context-API&logoColor=white"
               alt="Context-API"
               className="LogoImage"
