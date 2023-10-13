@@ -11,6 +11,7 @@ import ReduxToolkit from "./modal/ReduxToolkit";
 import ReactQuery from "./modal/ReactQuery";
 import SWR from "./modal/Swr";
 import Socketio from "./modal/SocketIo";
+import Jquery from "./modal/Jquery";
 
 const Skills = () => {
   const scrollPosition = 1800;
@@ -20,6 +21,7 @@ const Skills = () => {
   const [html5, setHtml5] = useState(false);
   const [css3, setCss3] = useState(false);
   const [typescript, setTypescript] = useState(false);
+  const [jquery, setJquery] = useState(false)
   const [react, setReact] = useState(false);
   const [redux, setRedux] = useState(false);
   const [query, setQuery] = useState(false);
@@ -36,6 +38,7 @@ const Skills = () => {
     setQuery(false);
     setSwr(false);
     setSocket(false);
+    setJquery(false)
   }, []);
 
   return (
@@ -47,6 +50,7 @@ const Skills = () => {
             <div>HTML5</div>
             <div>CSS3</div>
             <div>JavaScript</div>
+            <div>JQuery</div>
             <div>TypeScript</div>
             <div>React</div>
             <div>Redux-Toolkit</div>
@@ -56,7 +60,7 @@ const Skills = () => {
           </div>
 
           <div className="my-skill">
-            {[70, 80, 60, 30, 70, 60, 65, 50, 20].map((percentage, index) => (
+            {[80, 80, 60, 60, 30, 70, 60, 65, 50, 20].map((percentage, index) => (
               <div key={index} className="backGraph">
                 {percentage}%
                 <div
@@ -97,6 +101,16 @@ const Skills = () => {
               more
             </button>
             {javascript && <Javascript onCloseModal={onCloseModal} />}
+
+            <button
+              className="moreBtn"
+              onClick={() => {
+                setJquery(true);
+              }}
+            >
+              more
+            </button>
+            {jquery && <Jquery onCloseModal={onCloseModal} />}
 
             <button
               className="moreBtn"
