@@ -181,7 +181,7 @@ const Slackdetail = () => {
             </p>
           </div>
 
-          <div className="troubleBox">
+          {/* <div className="troubleBox">
             <h3>🧐 useSWRInfinite의 2차원 배열</h3>
             <div>1. 원인</div>
             <p>
@@ -219,7 +219,7 @@ const Slackdetail = () => {
               <label className="pointColor1">data.flat()</label>을 사용하여
               데이터를 수정했습니다."
             </p>
-          </div>
+          </div> */}
 
           <div className="troubleBox">
             <h3>🧐 소켓(Socket) 이슈 해결</h3>
