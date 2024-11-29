@@ -11,7 +11,7 @@ const Portfolio = () => {
   return (
     <>
       <StImgbox>
-        <div className="txt1"> FRONT-END DEV.</div>
+        <div className="txt1"> Full_Stack DEV.</div>
         <div className="txt2"> fortfolio </div>
         <img
           src={require("../images/down.png")}
@@ -26,11 +26,16 @@ const Portfolio = () => {
             <div>Intro</div>
           </div>
           <p className="content">
-          안녕하세요. 항상 개발 과정에서 실패를 겪을 때마다 새로운 시작점을 얻고 기쁨을 느끼고 있는 조민욱입니다. 
-          지난 부트캠프에서 협업 프로젝트를 통해 
-          적극적인 의사소통과 “1일 1” 알고리즘으로 문제 접근 방법과 해결책을 찾는 과정에서 크게 성장하고 있습니다. 
-          현재도 React의 기초 개념들과 다양한 코드 리뷰로 끊임없는 열정과 학습을 통해 
-          개발 트렌드에 부응하는 <span>프로페셔널한 개발자</span>로 거듭나기 위해 노력하고 있습니다.
+            안녕하세요. 항상 개발 과정에서 실패를 겪을 때마다 새로운 시작점을
+            얻고 기쁨을 느끼고 있는 <span>조민욱</span>입니다. 이전 사업에서
+            홈페이지를 제작하려는 생각에 문득 검색해 본 개발에 대한 호기심이
+            지금까지 저를 개발자로 이끌게 되었습니다. 그동안 부트캠프 및 국가
+            교육 과정을 통해 웹 기획, 개발, 배포에 걸쳐 폭넓은 경험을
+            쌓았습니다. 비록 늦은 시작이였지만 그 이상만큼의 열정과 호기심을
+            가지고 개발에 몰두하고 있으며 알고리즘으로 문제 접근 방법과 해결책을
+            찾고 개인 프로젝트, 팀 프로젝트를 참여하면서 최신기술을 익히고
+            있습니다. 또한 스터디 그룹을 통해 학습하는 과정에서 크게 성장하고
+            있습니다.
           </p>
         </div>
 
@@ -66,6 +71,7 @@ const StImgbox = styled.div`
     position: relative;
     text-align: center;
     font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
 
     animation: movehight 0.4s ease-in 1;
     @keyframes movehight {
@@ -91,7 +97,7 @@ const StImgbox = styled.div`
   .txt2 {
     line-height: 180px;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.8);
+    color: #34495e;
     animation: moveh 2.5s ease-in-out 1;
 
     @keyframes moveh {
@@ -268,7 +274,7 @@ const StPortfolio = styled.div`
     line-height: 40px;
     font-weight: 600;
     span {
-      color:blue;
+      color: blue;
       font-size: 20px;
       font-weight: 1000;
     }

@@ -12,7 +12,11 @@ const About = () => {
         <StTitle>about</StTitle>
         <StContainer>
           <div className="imgGro">
-            <div className="proflie-img" />
+            <img
+              src={require("../images/mypicture.jpg")}
+              alt="증명사진"
+              className="proflie-img"
+            />
           </div>
           <div className="content">
             <div className="proflie-imfor">
@@ -48,13 +52,25 @@ const About = () => {
             </div>
 
             <div className="sns">
-              <a href="https://github.com/jominuk">
+              <a
+                href="https://github.com/jominuk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={require("../images/git.jpg")} alt="git" />
               </a>
-              <a href="https://minuk22.tistory.com/">
+              <a
+                href="https://minuk22.tistory.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={require("../images/ti.jpg")} alt="tistory" />
               </a>
-              <a href="https://velog.io/@jominuk1025">
+              <a
+                href="https://velog.io/@jominuk1025"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={require("../images/vel.jpg")} alt="velog" />
               </a>
             </div>
@@ -77,9 +93,6 @@ const StTitle = styled.div`
 const StContainer = styled.div`
   .proflie-img {
     border-radius: 50%;
-    background: url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcvaBCy%2FbtssaAg8bo4%2FrTI2rCaylhSz9w4o62GVOk%2Fimg.jpg)
-      no-repeat center center;
-    background-size: cover;
   }
 
   @media screen and (min-width: 1400px) {
@@ -102,8 +115,8 @@ const StContainer = styled.div`
       width: 50%;
     }
     .proflie-img {
-      width: 250px;
-      height: 380px;
+      width: 240px;
+      height: 280px;
     }
 
     .content {
@@ -148,7 +161,7 @@ const StContainer = styled.div`
     }
     .proflie-img {
       width: 200px;
-      height: 330px;
+      height: 280px;
     }
 
     .content {
